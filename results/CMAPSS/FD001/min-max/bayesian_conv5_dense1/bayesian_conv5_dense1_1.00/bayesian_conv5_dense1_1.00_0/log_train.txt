@@ -1,0 +1,3282 @@
+Namespace(batch_size=512, dataset='CMAPSS/FD001', gamma=0.1, learning_rate=0.001, log_dir='log/CMAPSS/FD001/min-max/bayesian_conv5_dense1/bayesian_conv5_dense1_1.00/bayesian_conv5_dense1_1.00_0', max_epoch=250, max_rul=125, metric='rmse', model='bayesian_conv5_dense1', momentum=0.9, normalization='min-max', num_mc=1, optimizer='adam', quantity=1.0, resume=False, step_size=200, visualize_step=50)
+pid: 20882
+use_cuda: True
+Dataset: CMAPSS/FD001
+Building BayesianConv5Dense1...
+Done.
+**** start time: 2019-09-27 05:42:41.257241 ****
+________________________________________________________________
+        Layer (type)               Output Shape         Param #
+================================================================
+    BayesianConv2d-1           [-1, 10, 31, 14]             200
+           Sigmoid-2           [-1, 10, 31, 14]               0
+    BayesianConv2d-3           [-1, 10, 30, 14]           2,000
+           Sigmoid-4           [-1, 10, 30, 14]               0
+    BayesianConv2d-5           [-1, 10, 31, 14]           2,000
+           Sigmoid-6           [-1, 10, 31, 14]               0
+    BayesianConv2d-7           [-1, 10, 30, 14]           2,000
+           Sigmoid-8           [-1, 10, 30, 14]               0
+    BayesianConv2d-9            [-1, 1, 30, 14]              60
+         Softplus-10            [-1, 1, 30, 14]               0
+          Flatten-11                  [-1, 420]               0
+   BayesianLinear-12                  [-1, 100]          84,000
+         Softplus-13                  [-1, 100]               0
+   BayesianLinear-14                    [-1, 1]             200
+         Softplus-15                    [-1, 1]               0
+================================================================
+Total params: 90,460
+Trainable params: 90,460
+Non-trainable params: 0
+________________________________________________________________
+**** EPOCH 000 ****
+---- EPOCH 000 TRAINING ----
+2019-09-27 05:42:41.273978
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 2149.23
+ ---- batch: 020 ----
+mean loss: 1651.40
+ ---- batch: 030 ----
+mean loss: 1414.66
+train mean loss: 1672.91
+epoch train time: 0:00:17.105732
+elapsed time: 0:00:17.130801
+**** EPOCH 001 ****
+---- EPOCH 001 TRAINING ----
+2019-09-27 05:42:58.388092
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 1216.87
+ ---- batch: 020 ----
+mean loss: 1180.92
+ ---- batch: 030 ----
+mean loss: 1160.06
+train mean loss: 1178.86
+epoch train time: 0:00:06.990744
+elapsed time: 0:00:24.122196
+**** EPOCH 002 ****
+---- EPOCH 002 TRAINING ----
+2019-09-27 05:43:05.379608
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 1104.06
+ ---- batch: 020 ----
+mean loss: 1103.22
+ ---- batch: 030 ----
+mean loss: 1082.24
+train mean loss: 1091.12
+epoch train time: 0:00:06.915829
+elapsed time: 0:00:31.038780
+**** EPOCH 003 ****
+---- EPOCH 003 TRAINING ----
+2019-09-27 05:43:12.296179
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 1084.22
+ ---- batch: 020 ----
+mean loss: 1044.73
+ ---- batch: 030 ----
+mean loss: 1031.92
+train mean loss: 1047.22
+epoch train time: 0:00:06.855829
+elapsed time: 0:00:37.895401
+**** EPOCH 004 ****
+---- EPOCH 004 TRAINING ----
+2019-09-27 05:43:19.152799
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 1032.29
+ ---- batch: 020 ----
+mean loss: 1026.02
+ ---- batch: 030 ----
+mean loss: 1006.25
+train mean loss: 1020.50
+epoch train time: 0:00:06.774372
+elapsed time: 0:00:44.670548
+**** EPOCH 005 ****
+---- EPOCH 005 TRAINING ----
+2019-09-27 05:43:25.927967
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 990.23
+ ---- batch: 020 ----
+mean loss: 1009.96
+ ---- batch: 030 ----
+mean loss: 968.53
+train mean loss: 989.29
+epoch train time: 0:00:06.774745
+elapsed time: 0:00:51.446161
+**** EPOCH 006 ****
+---- EPOCH 006 TRAINING ----
+2019-09-27 05:43:32.703591
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 939.11
+ ---- batch: 020 ----
+mean loss: 925.89
+ ---- batch: 030 ----
+mean loss: 905.54
+train mean loss: 918.08
+epoch train time: 0:00:06.692546
+elapsed time: 0:00:58.139525
+**** EPOCH 007 ****
+---- EPOCH 007 TRAINING ----
+2019-09-27 05:43:39.396924
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 854.25
+ ---- batch: 020 ----
+mean loss: 816.84
+ ---- batch: 030 ----
+mean loss: 714.07
+train mean loss: 776.32
+epoch train time: 0:00:06.735507
+elapsed time: 0:01:04.875758
+**** EPOCH 008 ****
+---- EPOCH 008 TRAINING ----
+2019-09-27 05:43:46.133141
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 620.69
+ ---- batch: 020 ----
+mean loss: 534.59
+ ---- batch: 030 ----
+mean loss: 501.57
+train mean loss: 544.33
+epoch train time: 0:00:06.684726
+elapsed time: 0:01:11.561328
+**** EPOCH 009 ****
+---- EPOCH 009 TRAINING ----
+2019-09-27 05:43:52.818734
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 484.59
+ ---- batch: 020 ----
+mean loss: 463.69
+ ---- batch: 030 ----
+mean loss: 463.07
+train mean loss: 468.99
+epoch train time: 0:00:06.640418
+elapsed time: 0:01:18.202498
+**** EPOCH 010 ****
+---- EPOCH 010 TRAINING ----
+2019-09-27 05:43:59.459902
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 453.46
+ ---- batch: 020 ----
+mean loss: 449.25
+ ---- batch: 030 ----
+mean loss: 441.52
+train mean loss: 447.78
+epoch train time: 0:00:06.713583
+elapsed time: 0:01:24.916868
+**** EPOCH 011 ****
+---- EPOCH 011 TRAINING ----
+2019-09-27 05:44:06.174291
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 447.76
+ ---- batch: 020 ----
+mean loss: 434.67
+ ---- batch: 030 ----
+mean loss: 423.59
+train mean loss: 433.66
+epoch train time: 0:00:06.797579
+elapsed time: 0:01:31.715229
+**** EPOCH 012 ****
+---- EPOCH 012 TRAINING ----
+2019-09-27 05:44:12.972649
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 426.69
+ ---- batch: 020 ----
+mean loss: 425.09
+ ---- batch: 030 ----
+mean loss: 421.56
+train mean loss: 423.22
+epoch train time: 0:00:06.794720
+elapsed time: 0:01:38.510763
+**** EPOCH 013 ****
+---- EPOCH 013 TRAINING ----
+2019-09-27 05:44:19.768174
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 419.51
+ ---- batch: 020 ----
+mean loss: 416.06
+ ---- batch: 030 ----
+mean loss: 406.12
+train mean loss: 413.19
+epoch train time: 0:00:06.780458
+elapsed time: 0:01:45.292016
+**** EPOCH 014 ****
+---- EPOCH 014 TRAINING ----
+2019-09-27 05:44:26.549431
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 393.40
+ ---- batch: 020 ----
+mean loss: 398.60
+ ---- batch: 030 ----
+mean loss: 402.75
+train mean loss: 398.49
+epoch train time: 0:00:06.794961
+elapsed time: 0:01:52.087773
+**** EPOCH 015 ****
+---- EPOCH 015 TRAINING ----
+2019-09-27 05:44:33.345193
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 390.59
+ ---- batch: 020 ----
+mean loss: 380.67
+ ---- batch: 030 ----
+mean loss: 378.33
+train mean loss: 383.23
+epoch train time: 0:00:06.827202
+elapsed time: 0:01:58.915749
+**** EPOCH 016 ****
+---- EPOCH 016 TRAINING ----
+2019-09-27 05:44:40.173169
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 365.01
+ ---- batch: 020 ----
+mean loss: 382.14
+ ---- batch: 030 ----
+mean loss: 370.71
+train mean loss: 371.15
+epoch train time: 0:00:06.775490
+elapsed time: 0:02:05.692115
+**** EPOCH 017 ****
+---- EPOCH 017 TRAINING ----
+2019-09-27 05:44:46.949560
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 369.93
+ ---- batch: 020 ----
+mean loss: 360.66
+ ---- batch: 030 ----
+mean loss: 347.83
+train mean loss: 361.41
+epoch train time: 0:00:06.766477
+elapsed time: 0:02:12.459403
+**** EPOCH 018 ****
+---- EPOCH 018 TRAINING ----
+2019-09-27 05:44:53.716802
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 348.55
+ ---- batch: 020 ----
+mean loss: 356.21
+ ---- batch: 030 ----
+mean loss: 339.39
+train mean loss: 349.76
+epoch train time: 0:00:06.754235
+elapsed time: 0:02:19.214408
+**** EPOCH 019 ****
+---- EPOCH 019 TRAINING ----
+2019-09-27 05:45:00.471796
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 342.13
+ ---- batch: 020 ----
+mean loss: 331.06
+ ---- batch: 030 ----
+mean loss: 320.14
+train mean loss: 328.28
+epoch train time: 0:00:06.748625
+elapsed time: 0:02:25.963776
+**** EPOCH 020 ****
+---- EPOCH 020 TRAINING ----
+2019-09-27 05:45:07.221183
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 317.08
+ ---- batch: 020 ----
+mean loss: 314.62
+ ---- batch: 030 ----
+mean loss: 293.67
+train mean loss: 307.23
+epoch train time: 0:00:06.727840
+elapsed time: 0:02:32.692411
+**** EPOCH 021 ****
+---- EPOCH 021 TRAINING ----
+2019-09-27 05:45:13.949816
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 307.04
+ ---- batch: 020 ----
+mean loss: 301.98
+ ---- batch: 030 ----
+mean loss: 297.49
+train mean loss: 298.19
+epoch train time: 0:00:06.684433
+elapsed time: 0:02:39.377606
+**** EPOCH 022 ****
+---- EPOCH 022 TRAINING ----
+2019-09-27 05:45:20.635010
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 279.40
+ ---- batch: 020 ----
+mean loss: 286.70
+ ---- batch: 030 ----
+mean loss: 274.84
+train mean loss: 280.48
+epoch train time: 0:00:06.728011
+elapsed time: 0:02:46.106408
+**** EPOCH 023 ****
+---- EPOCH 023 TRAINING ----
+2019-09-27 05:45:27.363817
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 265.12
+ ---- batch: 020 ----
+mean loss: 271.80
+ ---- batch: 030 ----
+mean loss: 268.33
+train mean loss: 268.17
+epoch train time: 0:00:06.788193
+elapsed time: 0:02:52.895422
+**** EPOCH 024 ****
+---- EPOCH 024 TRAINING ----
+2019-09-27 05:45:34.152816
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 261.76
+ ---- batch: 020 ----
+mean loss: 266.37
+ ---- batch: 030 ----
+mean loss: 265.76
+train mean loss: 263.65
+epoch train time: 0:00:06.768344
+elapsed time: 0:02:59.664545
+**** EPOCH 025 ****
+---- EPOCH 025 TRAINING ----
+2019-09-27 05:45:40.922053
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 262.33
+ ---- batch: 020 ----
+mean loss: 249.35
+ ---- batch: 030 ----
+mean loss: 258.38
+train mean loss: 255.40
+epoch train time: 0:00:06.741467
+elapsed time: 0:03:06.406866
+**** EPOCH 026 ****
+---- EPOCH 026 TRAINING ----
+2019-09-27 05:45:47.664254
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 251.61
+ ---- batch: 020 ----
+mean loss: 247.57
+ ---- batch: 030 ----
+mean loss: 244.03
+train mean loss: 248.71
+epoch train time: 0:00:06.719031
+elapsed time: 0:03:13.126669
+**** EPOCH 027 ****
+---- EPOCH 027 TRAINING ----
+2019-09-27 05:45:54.384093
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 247.58
+ ---- batch: 020 ----
+mean loss: 237.48
+ ---- batch: 030 ----
+mean loss: 236.04
+train mean loss: 239.86
+epoch train time: 0:00:06.736781
+elapsed time: 0:03:19.864251
+**** EPOCH 028 ****
+---- EPOCH 028 TRAINING ----
+2019-09-27 05:46:01.121671
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 237.33
+ ---- batch: 020 ----
+mean loss: 230.39
+ ---- batch: 030 ----
+mean loss: 233.39
+train mean loss: 235.44
+epoch train time: 0:00:06.708382
+elapsed time: 0:03:26.573418
+**** EPOCH 029 ****
+---- EPOCH 029 TRAINING ----
+2019-09-27 05:46:07.830856
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 222.25
+ ---- batch: 020 ----
+mean loss: 230.04
+ ---- batch: 030 ----
+mean loss: 227.23
+train mean loss: 226.41
+epoch train time: 0:00:06.722546
+elapsed time: 0:03:33.296777
+**** EPOCH 030 ****
+---- EPOCH 030 TRAINING ----
+2019-09-27 05:46:14.554170
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 225.70
+ ---- batch: 020 ----
+mean loss: 220.74
+ ---- batch: 030 ----
+mean loss: 230.62
+train mean loss: 223.82
+epoch train time: 0:00:06.673008
+elapsed time: 0:03:39.970667
+**** EPOCH 031 ****
+---- EPOCH 031 TRAINING ----
+2019-09-27 05:46:21.228091
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 223.40
+ ---- batch: 020 ----
+mean loss: 226.21
+ ---- batch: 030 ----
+mean loss: 226.41
+train mean loss: 223.56
+epoch train time: 0:00:06.673562
+elapsed time: 0:03:46.644991
+**** EPOCH 032 ****
+---- EPOCH 032 TRAINING ----
+2019-09-27 05:46:27.902375
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 219.56
+ ---- batch: 020 ----
+mean loss: 212.57
+ ---- batch: 030 ----
+mean loss: 220.49
+train mean loss: 216.65
+epoch train time: 0:00:06.699289
+elapsed time: 0:03:53.345066
+**** EPOCH 033 ****
+---- EPOCH 033 TRAINING ----
+2019-09-27 05:46:34.602498
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 220.38
+ ---- batch: 020 ----
+mean loss: 212.47
+ ---- batch: 030 ----
+mean loss: 214.02
+train mean loss: 215.00
+epoch train time: 0:00:06.724022
+elapsed time: 0:04:00.069962
+**** EPOCH 034 ****
+---- EPOCH 034 TRAINING ----
+2019-09-27 05:46:41.327381
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 207.45
+ ---- batch: 020 ----
+mean loss: 214.03
+ ---- batch: 030 ----
+mean loss: 214.71
+train mean loss: 211.47
+epoch train time: 0:00:06.637558
+elapsed time: 0:04:06.708328
+**** EPOCH 035 ****
+---- EPOCH 035 TRAINING ----
+2019-09-27 05:46:47.965774
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 207.95
+ ---- batch: 020 ----
+mean loss: 211.00
+ ---- batch: 030 ----
+mean loss: 205.54
+train mean loss: 209.02
+epoch train time: 0:00:06.629787
+elapsed time: 0:04:13.338960
+**** EPOCH 036 ****
+---- EPOCH 036 TRAINING ----
+2019-09-27 05:46:54.596400
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 205.60
+ ---- batch: 020 ----
+mean loss: 204.16
+ ---- batch: 030 ----
+mean loss: 198.66
+train mean loss: 202.89
+epoch train time: 0:00:06.626204
+elapsed time: 0:04:19.966065
+**** EPOCH 037 ****
+---- EPOCH 037 TRAINING ----
+2019-09-27 05:47:01.223485
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 196.88
+ ---- batch: 020 ----
+mean loss: 191.10
+ ---- batch: 030 ----
+mean loss: 191.40
+train mean loss: 195.13
+epoch train time: 0:00:06.647109
+elapsed time: 0:04:26.613994
+**** EPOCH 038 ****
+---- EPOCH 038 TRAINING ----
+2019-09-27 05:47:07.871412
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 196.43
+ ---- batch: 020 ----
+mean loss: 194.04
+ ---- batch: 030 ----
+mean loss: 196.52
+train mean loss: 195.17
+epoch train time: 0:00:06.575214
+elapsed time: 0:04:33.190009
+**** EPOCH 039 ****
+---- EPOCH 039 TRAINING ----
+2019-09-27 05:47:14.447387
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 194.89
+ ---- batch: 020 ----
+mean loss: 193.99
+ ---- batch: 030 ----
+mean loss: 193.33
+train mean loss: 194.19
+epoch train time: 0:00:06.577809
+elapsed time: 0:04:39.768564
+**** EPOCH 040 ****
+---- EPOCH 040 TRAINING ----
+2019-09-27 05:47:21.025959
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 192.17
+ ---- batch: 020 ----
+mean loss: 184.67
+ ---- batch: 030 ----
+mean loss: 192.49
+train mean loss: 191.04
+epoch train time: 0:00:06.575043
+elapsed time: 0:04:46.344539
+**** EPOCH 041 ****
+---- EPOCH 041 TRAINING ----
+2019-09-27 05:47:27.601956
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 182.76
+ ---- batch: 020 ----
+mean loss: 189.83
+ ---- batch: 030 ----
+mean loss: 190.55
+train mean loss: 187.28
+epoch train time: 0:00:06.588007
+elapsed time: 0:04:52.933333
+**** EPOCH 042 ****
+---- EPOCH 042 TRAINING ----
+2019-09-27 05:47:34.190757
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 186.70
+ ---- batch: 020 ----
+mean loss: 186.35
+ ---- batch: 030 ----
+mean loss: 186.54
+train mean loss: 187.66
+epoch train time: 0:00:06.545106
+elapsed time: 0:04:59.479270
+**** EPOCH 043 ****
+---- EPOCH 043 TRAINING ----
+2019-09-27 05:47:40.736661
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 185.83
+ ---- batch: 020 ----
+mean loss: 182.06
+ ---- batch: 030 ----
+mean loss: 184.97
+train mean loss: 184.30
+epoch train time: 0:00:06.619493
+elapsed time: 0:05:06.099499
+**** EPOCH 044 ****
+---- EPOCH 044 TRAINING ----
+2019-09-27 05:47:47.356896
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 179.00
+ ---- batch: 020 ----
+mean loss: 182.48
+ ---- batch: 030 ----
+mean loss: 179.55
+train mean loss: 181.05
+epoch train time: 0:00:06.684792
+elapsed time: 0:05:12.785148
+**** EPOCH 045 ****
+---- EPOCH 045 TRAINING ----
+2019-09-27 05:47:54.042580
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 174.53
+ ---- batch: 020 ----
+mean loss: 175.74
+ ---- batch: 030 ----
+mean loss: 179.91
+train mean loss: 178.00
+epoch train time: 0:00:06.669371
+elapsed time: 0:05:19.455495
+**** EPOCH 046 ****
+---- EPOCH 046 TRAINING ----
+2019-09-27 05:48:00.712919
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 176.10
+ ---- batch: 020 ----
+mean loss: 180.24
+ ---- batch: 030 ----
+mean loss: 179.50
+train mean loss: 178.11
+epoch train time: 0:00:06.638101
+elapsed time: 0:05:26.094477
+**** EPOCH 047 ****
+---- EPOCH 047 TRAINING ----
+2019-09-27 05:48:07.351925
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 176.73
+ ---- batch: 020 ----
+mean loss: 180.06
+ ---- batch: 030 ----
+mean loss: 176.13
+train mean loss: 177.17
+epoch train time: 0:00:06.632139
+elapsed time: 0:05:32.727401
+**** EPOCH 048 ****
+---- EPOCH 048 TRAINING ----
+2019-09-27 05:48:13.984800
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 173.71
+ ---- batch: 020 ----
+mean loss: 173.01
+ ---- batch: 030 ----
+mean loss: 178.73
+train mean loss: 173.02
+epoch train time: 0:00:06.622613
+elapsed time: 0:05:39.350924
+**** EPOCH 049 ****
+---- EPOCH 049 TRAINING ----
+2019-09-27 05:48:20.608340
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 174.30
+ ---- batch: 020 ----
+mean loss: 173.77
+ ---- batch: 030 ----
+mean loss: 167.14
+train mean loss: 171.24
+epoch train time: 0:00:06.562305
+elapsed time: 0:05:45.914062
+**** EPOCH 050 ****
+---- EPOCH 050 TRAINING ----
+2019-09-27 05:48:27.171466
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 177.69
+ ---- batch: 020 ----
+mean loss: 168.14
+ ---- batch: 030 ----
+mean loss: 169.43
+train mean loss: 171.07
+epoch train time: 0:00:06.659682
+elapsed time: 0:05:52.574539
+**** EPOCH 051 ****
+---- EPOCH 051 TRAINING ----
+2019-09-27 05:48:33.831922
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 165.29
+ ---- batch: 020 ----
+mean loss: 166.96
+ ---- batch: 030 ----
+mean loss: 164.13
+train mean loss: 165.88
+epoch train time: 0:00:06.674258
+elapsed time: 0:05:59.249535
+**** EPOCH 052 ****
+---- EPOCH 052 TRAINING ----
+2019-09-27 05:48:40.506930
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 174.22
+ ---- batch: 020 ----
+mean loss: 175.89
+ ---- batch: 030 ----
+mean loss: 170.96
+train mean loss: 172.15
+epoch train time: 0:00:06.669968
+elapsed time: 0:06:05.920256
+**** EPOCH 053 ****
+---- EPOCH 053 TRAINING ----
+2019-09-27 05:48:47.177686
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 157.39
+ ---- batch: 020 ----
+mean loss: 165.05
+ ---- batch: 030 ----
+mean loss: 159.84
+train mean loss: 161.69
+epoch train time: 0:00:06.678676
+elapsed time: 0:06:12.599737
+**** EPOCH 054 ****
+---- EPOCH 054 TRAINING ----
+2019-09-27 05:48:53.857140
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 167.68
+ ---- batch: 020 ----
+mean loss: 159.85
+ ---- batch: 030 ----
+mean loss: 162.88
+train mean loss: 162.11
+epoch train time: 0:00:06.644444
+elapsed time: 0:06:19.244976
+**** EPOCH 055 ****
+---- EPOCH 055 TRAINING ----
+2019-09-27 05:49:00.502370
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 163.47
+ ---- batch: 020 ----
+mean loss: 164.62
+ ---- batch: 030 ----
+mean loss: 157.16
+train mean loss: 161.50
+epoch train time: 0:00:06.644336
+elapsed time: 0:06:25.890209
+**** EPOCH 056 ****
+---- EPOCH 056 TRAINING ----
+2019-09-27 05:49:07.147618
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 160.20
+ ---- batch: 020 ----
+mean loss: 157.92
+ ---- batch: 030 ----
+mean loss: 161.11
+train mean loss: 159.49
+epoch train time: 0:00:06.639242
+elapsed time: 0:06:32.530237
+**** EPOCH 057 ****
+---- EPOCH 057 TRAINING ----
+2019-09-27 05:49:13.787641
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 156.45
+ ---- batch: 020 ----
+mean loss: 157.79
+ ---- batch: 030 ----
+mean loss: 159.13
+train mean loss: 157.30
+epoch train time: 0:00:06.642656
+elapsed time: 0:06:39.173667
+**** EPOCH 058 ****
+---- EPOCH 058 TRAINING ----
+2019-09-27 05:49:20.431097
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 156.71
+ ---- batch: 020 ----
+mean loss: 158.27
+ ---- batch: 030 ----
+mean loss: 158.77
+train mean loss: 155.50
+epoch train time: 0:00:06.642629
+elapsed time: 0:06:45.817061
+**** EPOCH 059 ****
+---- EPOCH 059 TRAINING ----
+2019-09-27 05:49:27.074456
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 151.18
+ ---- batch: 020 ----
+mean loss: 151.60
+ ---- batch: 030 ----
+mean loss: 158.96
+train mean loss: 154.15
+epoch train time: 0:00:06.603140
+elapsed time: 0:06:52.420997
+**** EPOCH 060 ****
+---- EPOCH 060 TRAINING ----
+2019-09-27 05:49:33.678407
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 154.01
+ ---- batch: 020 ----
+mean loss: 155.53
+ ---- batch: 030 ----
+mean loss: 155.60
+train mean loss: 154.82
+epoch train time: 0:00:06.679092
+elapsed time: 0:06:59.100924
+**** EPOCH 061 ****
+---- EPOCH 061 TRAINING ----
+2019-09-27 05:49:40.358308
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 151.04
+ ---- batch: 020 ----
+mean loss: 144.69
+ ---- batch: 030 ----
+mean loss: 159.50
+train mean loss: 150.88
+epoch train time: 0:00:06.748937
+elapsed time: 0:07:05.850713
+**** EPOCH 062 ****
+---- EPOCH 062 TRAINING ----
+2019-09-27 05:49:47.108108
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 154.15
+ ---- batch: 020 ----
+mean loss: 153.34
+ ---- batch: 030 ----
+mean loss: 150.30
+train mean loss: 152.05
+epoch train time: 0:00:06.705692
+elapsed time: 0:07:12.557190
+**** EPOCH 063 ****
+---- EPOCH 063 TRAINING ----
+2019-09-27 05:49:53.814593
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 145.81
+ ---- batch: 020 ----
+mean loss: 153.29
+ ---- batch: 030 ----
+mean loss: 149.31
+train mean loss: 149.14
+epoch train time: 0:00:06.689670
+elapsed time: 0:07:19.247690
+**** EPOCH 064 ****
+---- EPOCH 064 TRAINING ----
+2019-09-27 05:50:00.505086
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 150.44
+ ---- batch: 020 ----
+mean loss: 146.71
+ ---- batch: 030 ----
+mean loss: 142.88
+train mean loss: 146.23
+epoch train time: 0:00:06.670259
+elapsed time: 0:07:25.918719
+**** EPOCH 065 ****
+---- EPOCH 065 TRAINING ----
+2019-09-27 05:50:07.176133
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 147.13
+ ---- batch: 020 ----
+mean loss: 146.36
+ ---- batch: 030 ----
+mean loss: 146.56
+train mean loss: 148.07
+epoch train time: 0:00:06.640737
+elapsed time: 0:07:32.560299
+**** EPOCH 066 ****
+---- EPOCH 066 TRAINING ----
+2019-09-27 05:50:13.817716
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 146.17
+ ---- batch: 020 ----
+mean loss: 147.34
+ ---- batch: 030 ----
+mean loss: 150.01
+train mean loss: 148.65
+epoch train time: 0:00:06.645833
+elapsed time: 0:07:39.206937
+**** EPOCH 067 ****
+---- EPOCH 067 TRAINING ----
+2019-09-27 05:50:20.464405
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 150.47
+ ---- batch: 020 ----
+mean loss: 144.29
+ ---- batch: 030 ----
+mean loss: 146.97
+train mean loss: 147.22
+epoch train time: 0:00:06.752942
+elapsed time: 0:07:45.960768
+**** EPOCH 068 ****
+---- EPOCH 068 TRAINING ----
+2019-09-27 05:50:27.218166
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 148.30
+ ---- batch: 020 ----
+mean loss: 143.96
+ ---- batch: 030 ----
+mean loss: 141.09
+train mean loss: 144.75
+epoch train time: 0:00:06.821472
+elapsed time: 0:07:52.782993
+**** EPOCH 069 ****
+---- EPOCH 069 TRAINING ----
+2019-09-27 05:50:34.040389
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 142.13
+ ---- batch: 020 ----
+mean loss: 144.11
+ ---- batch: 030 ----
+mean loss: 143.47
+train mean loss: 144.99
+epoch train time: 0:00:06.806067
+elapsed time: 0:07:59.589836
+**** EPOCH 070 ****
+---- EPOCH 070 TRAINING ----
+2019-09-27 05:50:40.847221
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 143.91
+ ---- batch: 020 ----
+mean loss: 144.27
+ ---- batch: 030 ----
+mean loss: 140.23
+train mean loss: 142.56
+epoch train time: 0:00:06.756254
+elapsed time: 0:08:06.346890
+**** EPOCH 071 ****
+---- EPOCH 071 TRAINING ----
+2019-09-27 05:50:47.604292
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 139.93
+ ---- batch: 020 ----
+mean loss: 142.00
+ ---- batch: 030 ----
+mean loss: 139.66
+train mean loss: 141.32
+epoch train time: 0:00:06.746891
+elapsed time: 0:08:13.094546
+**** EPOCH 072 ****
+---- EPOCH 072 TRAINING ----
+2019-09-27 05:50:54.351948
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 141.12
+ ---- batch: 020 ----
+mean loss: 140.94
+ ---- batch: 030 ----
+mean loss: 140.13
+train mean loss: 140.40
+epoch train time: 0:00:06.757905
+elapsed time: 0:08:19.853327
+**** EPOCH 073 ****
+---- EPOCH 073 TRAINING ----
+2019-09-27 05:51:01.110727
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 136.95
+ ---- batch: 020 ----
+mean loss: 139.96
+ ---- batch: 030 ----
+mean loss: 139.93
+train mean loss: 138.63
+epoch train time: 0:00:06.742567
+elapsed time: 0:08:26.596715
+**** EPOCH 074 ****
+---- EPOCH 074 TRAINING ----
+2019-09-27 05:51:07.854107
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 135.39
+ ---- batch: 020 ----
+mean loss: 138.27
+ ---- batch: 030 ----
+mean loss: 138.67
+train mean loss: 137.31
+epoch train time: 0:00:06.713420
+elapsed time: 0:08:33.310977
+**** EPOCH 075 ****
+---- EPOCH 075 TRAINING ----
+2019-09-27 05:51:14.568409
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 136.54
+ ---- batch: 020 ----
+mean loss: 138.73
+ ---- batch: 030 ----
+mean loss: 142.54
+train mean loss: 138.98
+epoch train time: 0:00:06.711192
+elapsed time: 0:08:40.022947
+**** EPOCH 076 ****
+---- EPOCH 076 TRAINING ----
+2019-09-27 05:51:21.280339
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 136.18
+ ---- batch: 020 ----
+mean loss: 137.41
+ ---- batch: 030 ----
+mean loss: 130.43
+train mean loss: 135.48
+epoch train time: 0:00:06.726830
+elapsed time: 0:08:46.750546
+**** EPOCH 077 ****
+---- EPOCH 077 TRAINING ----
+2019-09-27 05:51:28.007955
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 141.56
+ ---- batch: 020 ----
+mean loss: 134.13
+ ---- batch: 030 ----
+mean loss: 136.87
+train mean loss: 136.51
+epoch train time: 0:00:06.732363
+elapsed time: 0:08:53.483780
+**** EPOCH 078 ****
+---- EPOCH 078 TRAINING ----
+2019-09-27 05:51:34.741237
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 138.13
+ ---- batch: 020 ----
+mean loss: 136.09
+ ---- batch: 030 ----
+mean loss: 137.02
+train mean loss: 137.11
+epoch train time: 0:00:06.732277
+elapsed time: 0:09:00.216922
+**** EPOCH 079 ****
+---- EPOCH 079 TRAINING ----
+2019-09-27 05:51:41.474351
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 131.50
+ ---- batch: 020 ----
+mean loss: 139.72
+ ---- batch: 030 ----
+mean loss: 136.42
+train mean loss: 135.07
+epoch train time: 0:00:06.741920
+elapsed time: 0:09:06.959611
+**** EPOCH 080 ****
+---- EPOCH 080 TRAINING ----
+2019-09-27 05:51:48.216998
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 136.89
+ ---- batch: 020 ----
+mean loss: 132.94
+ ---- batch: 030 ----
+mean loss: 130.41
+train mean loss: 134.03
+epoch train time: 0:00:06.697076
+elapsed time: 0:09:13.657451
+**** EPOCH 081 ****
+---- EPOCH 081 TRAINING ----
+2019-09-27 05:51:54.914850
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 125.80
+ ---- batch: 020 ----
+mean loss: 133.72
+ ---- batch: 030 ----
+mean loss: 135.88
+train mean loss: 131.21
+epoch train time: 0:00:06.709590
+elapsed time: 0:09:20.367907
+**** EPOCH 082 ****
+---- EPOCH 082 TRAINING ----
+2019-09-27 05:52:01.625296
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 130.27
+ ---- batch: 020 ----
+mean loss: 129.12
+ ---- batch: 030 ----
+mean loss: 128.28
+train mean loss: 129.54
+epoch train time: 0:00:06.752129
+elapsed time: 0:09:27.120807
+**** EPOCH 083 ****
+---- EPOCH 083 TRAINING ----
+2019-09-27 05:52:08.378213
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 129.52
+ ---- batch: 020 ----
+mean loss: 132.29
+ ---- batch: 030 ----
+mean loss: 130.98
+train mean loss: 131.63
+epoch train time: 0:00:06.807163
+elapsed time: 0:09:33.928817
+**** EPOCH 084 ****
+---- EPOCH 084 TRAINING ----
+2019-09-27 05:52:15.186230
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 129.04
+ ---- batch: 020 ----
+mean loss: 131.50
+ ---- batch: 030 ----
+mean loss: 129.78
+train mean loss: 128.50
+epoch train time: 0:00:06.753270
+elapsed time: 0:09:40.682870
+**** EPOCH 085 ****
+---- EPOCH 085 TRAINING ----
+2019-09-27 05:52:21.940287
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 130.07
+ ---- batch: 020 ----
+mean loss: 131.09
+ ---- batch: 030 ----
+mean loss: 131.07
+train mean loss: 131.24
+epoch train time: 0:00:06.744712
+elapsed time: 0:09:47.428352
+**** EPOCH 086 ****
+---- EPOCH 086 TRAINING ----
+2019-09-27 05:52:28.685771
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 123.76
+ ---- batch: 020 ----
+mean loss: 129.21
+ ---- batch: 030 ----
+mean loss: 133.47
+train mean loss: 129.77
+epoch train time: 0:00:06.733815
+elapsed time: 0:09:54.163003
+**** EPOCH 087 ****
+---- EPOCH 087 TRAINING ----
+2019-09-27 05:52:35.420419
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 129.24
+ ---- batch: 020 ----
+mean loss: 131.33
+ ---- batch: 030 ----
+mean loss: 122.59
+train mean loss: 129.19
+epoch train time: 0:00:06.740505
+elapsed time: 0:10:00.904329
+**** EPOCH 088 ****
+---- EPOCH 088 TRAINING ----
+2019-09-27 05:52:42.161776
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 132.45
+ ---- batch: 020 ----
+mean loss: 128.17
+ ---- batch: 030 ----
+mean loss: 123.09
+train mean loss: 128.60
+epoch train time: 0:00:06.693450
+elapsed time: 0:10:07.598637
+**** EPOCH 089 ****
+---- EPOCH 089 TRAINING ----
+2019-09-27 05:52:48.856059
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 126.61
+ ---- batch: 020 ----
+mean loss: 123.15
+ ---- batch: 030 ----
+mean loss: 128.12
+train mean loss: 125.91
+epoch train time: 0:00:06.683487
+elapsed time: 0:10:14.282922
+**** EPOCH 090 ****
+---- EPOCH 090 TRAINING ----
+2019-09-27 05:52:55.540326
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 131.15
+ ---- batch: 020 ----
+mean loss: 124.90
+ ---- batch: 030 ----
+mean loss: 127.30
+train mean loss: 127.23
+epoch train time: 0:00:06.698924
+elapsed time: 0:10:20.982782
+**** EPOCH 091 ****
+---- EPOCH 091 TRAINING ----
+2019-09-27 05:53:02.240178
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 126.40
+ ---- batch: 020 ----
+mean loss: 126.93
+ ---- batch: 030 ----
+mean loss: 126.62
+train mean loss: 126.42
+epoch train time: 0:00:06.719419
+elapsed time: 0:10:27.702984
+**** EPOCH 092 ****
+---- EPOCH 092 TRAINING ----
+2019-09-27 05:53:08.960397
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 129.50
+ ---- batch: 020 ----
+mean loss: 128.11
+ ---- batch: 030 ----
+mean loss: 122.66
+train mean loss: 126.84
+epoch train time: 0:00:06.720009
+elapsed time: 0:10:34.423806
+**** EPOCH 093 ****
+---- EPOCH 093 TRAINING ----
+2019-09-27 05:53:15.681210
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 124.39
+ ---- batch: 020 ----
+mean loss: 122.55
+ ---- batch: 030 ----
+mean loss: 128.71
+train mean loss: 125.55
+epoch train time: 0:00:06.673578
+elapsed time: 0:10:41.098177
+**** EPOCH 094 ****
+---- EPOCH 094 TRAINING ----
+2019-09-27 05:53:22.355583
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 125.39
+ ---- batch: 020 ----
+mean loss: 122.55
+ ---- batch: 030 ----
+mean loss: 123.70
+train mean loss: 123.90
+epoch train time: 0:00:06.653251
+elapsed time: 0:10:47.752260
+**** EPOCH 095 ****
+---- EPOCH 095 TRAINING ----
+2019-09-27 05:53:29.009687
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 122.97
+ ---- batch: 020 ----
+mean loss: 123.81
+ ---- batch: 030 ----
+mean loss: 127.09
+train mean loss: 124.60
+epoch train time: 0:00:06.676589
+elapsed time: 0:10:54.429673
+**** EPOCH 096 ****
+---- EPOCH 096 TRAINING ----
+2019-09-27 05:53:35.687082
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 120.40
+ ---- batch: 020 ----
+mean loss: 122.98
+ ---- batch: 030 ----
+mean loss: 124.28
+train mean loss: 122.42
+epoch train time: 0:00:06.658207
+elapsed time: 0:11:01.088746
+**** EPOCH 097 ****
+---- EPOCH 097 TRAINING ----
+2019-09-27 05:53:42.346157
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 119.01
+ ---- batch: 020 ----
+mean loss: 121.38
+ ---- batch: 030 ----
+mean loss: 121.69
+train mean loss: 121.49
+epoch train time: 0:00:06.643277
+elapsed time: 0:11:07.732871
+**** EPOCH 098 ****
+---- EPOCH 098 TRAINING ----
+2019-09-27 05:53:48.990310
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 124.53
+ ---- batch: 020 ----
+mean loss: 124.23
+ ---- batch: 030 ----
+mean loss: 118.80
+train mean loss: 121.94
+epoch train time: 0:00:06.795540
+elapsed time: 0:11:14.529295
+**** EPOCH 099 ****
+---- EPOCH 099 TRAINING ----
+2019-09-27 05:53:55.786736
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 124.57
+ ---- batch: 020 ----
+mean loss: 121.04
+ ---- batch: 030 ----
+mean loss: 116.90
+train mean loss: 121.86
+epoch train time: 0:00:06.790356
+elapsed time: 0:11:21.320605
+**** EPOCH 100 ****
+---- EPOCH 100 TRAINING ----
+2019-09-27 05:54:02.577995
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 124.07
+ ---- batch: 020 ----
+mean loss: 121.80
+ ---- batch: 030 ----
+mean loss: 120.19
+train mean loss: 122.52
+epoch train time: 0:00:06.756138
+elapsed time: 0:11:28.077520
+**** EPOCH 101 ****
+---- EPOCH 101 TRAINING ----
+2019-09-27 05:54:09.334948
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 124.78
+ ---- batch: 020 ----
+mean loss: 120.05
+ ---- batch: 030 ----
+mean loss: 121.24
+train mean loss: 120.73
+epoch train time: 0:00:06.673865
+elapsed time: 0:11:34.752214
+**** EPOCH 102 ****
+---- EPOCH 102 TRAINING ----
+2019-09-27 05:54:16.009621
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 118.71
+ ---- batch: 020 ----
+mean loss: 122.92
+ ---- batch: 030 ----
+mean loss: 114.69
+train mean loss: 119.09
+epoch train time: 0:00:06.622128
+elapsed time: 0:11:41.375147
+**** EPOCH 103 ****
+---- EPOCH 103 TRAINING ----
+2019-09-27 05:54:22.632557
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 118.28
+ ---- batch: 020 ----
+mean loss: 119.01
+ ---- batch: 030 ----
+mean loss: 119.31
+train mean loss: 119.32
+epoch train time: 0:00:06.636156
+elapsed time: 0:11:48.012116
+**** EPOCH 104 ****
+---- EPOCH 104 TRAINING ----
+2019-09-27 05:54:29.269527
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 117.02
+ ---- batch: 020 ----
+mean loss: 118.94
+ ---- batch: 030 ----
+mean loss: 115.30
+train mean loss: 118.04
+epoch train time: 0:00:06.624033
+elapsed time: 0:11:54.637240
+**** EPOCH 105 ****
+---- EPOCH 105 TRAINING ----
+2019-09-27 05:54:35.894669
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 116.77
+ ---- batch: 020 ----
+mean loss: 117.28
+ ---- batch: 030 ----
+mean loss: 120.18
+train mean loss: 117.81
+epoch train time: 0:00:06.728057
+elapsed time: 0:12:01.366071
+**** EPOCH 106 ****
+---- EPOCH 106 TRAINING ----
+2019-09-27 05:54:42.623504
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 117.52
+ ---- batch: 020 ----
+mean loss: 117.32
+ ---- batch: 030 ----
+mean loss: 119.55
+train mean loss: 118.11
+epoch train time: 0:00:06.722632
+elapsed time: 0:12:08.089698
+**** EPOCH 107 ****
+---- EPOCH 107 TRAINING ----
+2019-09-27 05:54:49.347001
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 114.50
+ ---- batch: 020 ----
+mean loss: 114.73
+ ---- batch: 030 ----
+mean loss: 117.93
+train mean loss: 116.28
+epoch train time: 0:00:06.736340
+elapsed time: 0:12:14.826773
+**** EPOCH 108 ****
+---- EPOCH 108 TRAINING ----
+2019-09-27 05:54:56.084171
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 124.03
+ ---- batch: 020 ----
+mean loss: 119.01
+ ---- batch: 030 ----
+mean loss: 112.47
+train mean loss: 118.05
+epoch train time: 0:00:06.745556
+elapsed time: 0:12:21.573300
+**** EPOCH 109 ****
+---- EPOCH 109 TRAINING ----
+2019-09-27 05:55:02.830763
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 116.48
+ ---- batch: 020 ----
+mean loss: 112.77
+ ---- batch: 030 ----
+mean loss: 118.63
+train mean loss: 116.45
+epoch train time: 0:00:06.679784
+elapsed time: 0:12:28.253898
+**** EPOCH 110 ****
+---- EPOCH 110 TRAINING ----
+2019-09-27 05:55:09.511350
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 111.22
+ ---- batch: 020 ----
+mean loss: 115.05
+ ---- batch: 030 ----
+mean loss: 117.85
+train mean loss: 115.21
+epoch train time: 0:00:06.686923
+elapsed time: 0:12:34.941685
+**** EPOCH 111 ****
+---- EPOCH 111 TRAINING ----
+2019-09-27 05:55:16.199094
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 115.58
+ ---- batch: 020 ----
+mean loss: 115.39
+ ---- batch: 030 ----
+mean loss: 113.33
+train mean loss: 115.25
+epoch train time: 0:00:06.668005
+elapsed time: 0:12:41.610470
+**** EPOCH 112 ****
+---- EPOCH 112 TRAINING ----
+2019-09-27 05:55:22.867896
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 117.26
+ ---- batch: 020 ----
+mean loss: 115.78
+ ---- batch: 030 ----
+mean loss: 115.01
+train mean loss: 115.81
+epoch train time: 0:00:06.663578
+elapsed time: 0:12:48.274815
+**** EPOCH 113 ****
+---- EPOCH 113 TRAINING ----
+2019-09-27 05:55:29.532213
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 116.55
+ ---- batch: 020 ----
+mean loss: 111.89
+ ---- batch: 030 ----
+mean loss: 115.48
+train mean loss: 113.92
+epoch train time: 0:00:06.657949
+elapsed time: 0:12:54.933530
+**** EPOCH 114 ****
+---- EPOCH 114 TRAINING ----
+2019-09-27 05:55:36.190925
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 109.25
+ ---- batch: 020 ----
+mean loss: 112.88
+ ---- batch: 030 ----
+mean loss: 110.05
+train mean loss: 111.86
+epoch train time: 0:00:06.666420
+elapsed time: 0:13:01.600726
+**** EPOCH 115 ****
+---- EPOCH 115 TRAINING ----
+2019-09-27 05:55:42.858191
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 114.03
+ ---- batch: 020 ----
+mean loss: 110.16
+ ---- batch: 030 ----
+mean loss: 115.87
+train mean loss: 113.30
+epoch train time: 0:00:06.667447
+elapsed time: 0:13:08.268983
+**** EPOCH 116 ****
+---- EPOCH 116 TRAINING ----
+2019-09-27 05:55:49.526373
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 113.74
+ ---- batch: 020 ----
+mean loss: 111.79
+ ---- batch: 030 ----
+mean loss: 114.77
+train mean loss: 112.63
+epoch train time: 0:00:06.755851
+elapsed time: 0:13:15.025591
+**** EPOCH 117 ****
+---- EPOCH 117 TRAINING ----
+2019-09-27 05:55:56.283000
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 117.87
+ ---- batch: 020 ----
+mean loss: 113.58
+ ---- batch: 030 ----
+mean loss: 116.27
+train mean loss: 114.79
+epoch train time: 0:00:06.821448
+elapsed time: 0:13:21.847897
+**** EPOCH 118 ****
+---- EPOCH 118 TRAINING ----
+2019-09-27 05:56:03.105329
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 114.50
+ ---- batch: 020 ----
+mean loss: 114.70
+ ---- batch: 030 ----
+mean loss: 114.85
+train mean loss: 114.72
+epoch train time: 0:00:06.726498
+elapsed time: 0:13:28.575243
+**** EPOCH 119 ****
+---- EPOCH 119 TRAINING ----
+2019-09-27 05:56:09.832670
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 113.91
+ ---- batch: 020 ----
+mean loss: 112.97
+ ---- batch: 030 ----
+mean loss: 112.22
+train mean loss: 112.06
+epoch train time: 0:00:06.768568
+elapsed time: 0:13:35.344648
+**** EPOCH 120 ****
+---- EPOCH 120 TRAINING ----
+2019-09-27 05:56:16.602057
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 114.14
+ ---- batch: 020 ----
+mean loss: 116.15
+ ---- batch: 030 ----
+mean loss: 110.41
+train mean loss: 113.69
+epoch train time: 0:00:06.747105
+elapsed time: 0:13:42.092539
+**** EPOCH 121 ****
+---- EPOCH 121 TRAINING ----
+2019-09-27 05:56:23.349960
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 109.00
+ ---- batch: 020 ----
+mean loss: 112.50
+ ---- batch: 030 ----
+mean loss: 113.20
+train mean loss: 110.94
+epoch train time: 0:00:06.734906
+elapsed time: 0:13:48.828205
+**** EPOCH 122 ****
+---- EPOCH 122 TRAINING ----
+2019-09-27 05:56:30.085598
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 108.25
+ ---- batch: 020 ----
+mean loss: 113.87
+ ---- batch: 030 ----
+mean loss: 109.59
+train mean loss: 110.27
+epoch train time: 0:00:06.708327
+elapsed time: 0:13:55.537423
+**** EPOCH 123 ****
+---- EPOCH 123 TRAINING ----
+2019-09-27 05:56:36.794880
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 112.72
+ ---- batch: 020 ----
+mean loss: 108.39
+ ---- batch: 030 ----
+mean loss: 111.24
+train mean loss: 110.34
+epoch train time: 0:00:06.705499
+elapsed time: 0:14:02.243756
+**** EPOCH 124 ****
+---- EPOCH 124 TRAINING ----
+2019-09-27 05:56:43.501155
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 109.63
+ ---- batch: 020 ----
+mean loss: 107.56
+ ---- batch: 030 ----
+mean loss: 110.66
+train mean loss: 109.98
+epoch train time: 0:00:06.701481
+elapsed time: 0:14:08.945994
+**** EPOCH 125 ****
+---- EPOCH 125 TRAINING ----
+2019-09-27 05:56:50.203403
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 111.37
+ ---- batch: 020 ----
+mean loss: 108.75
+ ---- batch: 030 ----
+mean loss: 105.74
+train mean loss: 109.33
+epoch train time: 0:00:06.645083
+elapsed time: 0:14:15.591864
+**** EPOCH 126 ****
+---- EPOCH 126 TRAINING ----
+2019-09-27 05:56:56.849276
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 109.87
+ ---- batch: 020 ----
+mean loss: 109.61
+ ---- batch: 030 ----
+mean loss: 109.60
+train mean loss: 109.44
+epoch train time: 0:00:06.789955
+elapsed time: 0:14:22.382731
+**** EPOCH 127 ****
+---- EPOCH 127 TRAINING ----
+2019-09-27 05:57:03.640031
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 107.04
+ ---- batch: 020 ----
+mean loss: 108.49
+ ---- batch: 030 ----
+mean loss: 113.83
+train mean loss: 109.84
+epoch train time: 0:00:06.780527
+elapsed time: 0:14:29.163974
+**** EPOCH 128 ****
+---- EPOCH 128 TRAINING ----
+2019-09-27 05:57:10.421379
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 107.28
+ ---- batch: 020 ----
+mean loss: 109.75
+ ---- batch: 030 ----
+mean loss: 109.95
+train mean loss: 109.10
+epoch train time: 0:00:06.755148
+elapsed time: 0:14:35.919919
+**** EPOCH 129 ****
+---- EPOCH 129 TRAINING ----
+2019-09-27 05:57:17.177330
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 111.90
+ ---- batch: 020 ----
+mean loss: 106.73
+ ---- batch: 030 ----
+mean loss: 107.41
+train mean loss: 109.33
+epoch train time: 0:00:06.685335
+elapsed time: 0:14:42.606097
+**** EPOCH 130 ****
+---- EPOCH 130 TRAINING ----
+2019-09-27 05:57:23.863540
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 111.31
+ ---- batch: 020 ----
+mean loss: 105.93
+ ---- batch: 030 ----
+mean loss: 108.42
+train mean loss: 107.44
+epoch train time: 0:00:06.639839
+elapsed time: 0:14:49.246759
+**** EPOCH 131 ****
+---- EPOCH 131 TRAINING ----
+2019-09-27 05:57:30.504181
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 106.68
+ ---- batch: 020 ----
+mean loss: 104.93
+ ---- batch: 030 ----
+mean loss: 109.85
+train mean loss: 106.94
+epoch train time: 0:00:06.656971
+elapsed time: 0:14:55.904824
+**** EPOCH 132 ****
+---- EPOCH 132 TRAINING ----
+2019-09-27 05:57:37.162254
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 107.83
+ ---- batch: 020 ----
+mean loss: 105.83
+ ---- batch: 030 ----
+mean loss: 106.64
+train mean loss: 106.39
+epoch train time: 0:00:06.728957
+elapsed time: 0:15:02.634641
+**** EPOCH 133 ****
+---- EPOCH 133 TRAINING ----
+2019-09-27 05:57:43.892085
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 108.62
+ ---- batch: 020 ----
+mean loss: 107.64
+ ---- batch: 030 ----
+mean loss: 107.63
+train mean loss: 107.43
+epoch train time: 0:00:06.676614
+elapsed time: 0:15:09.312106
+**** EPOCH 134 ****
+---- EPOCH 134 TRAINING ----
+2019-09-27 05:57:50.569560
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 106.95
+ ---- batch: 020 ----
+mean loss: 107.62
+ ---- batch: 030 ----
+mean loss: 108.38
+train mean loss: 106.50
+epoch train time: 0:00:06.650162
+elapsed time: 0:15:15.963174
+**** EPOCH 135 ****
+---- EPOCH 135 TRAINING ----
+2019-09-27 05:57:57.220572
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 106.41
+ ---- batch: 020 ----
+mean loss: 100.74
+ ---- batch: 030 ----
+mean loss: 107.71
+train mean loss: 105.48
+epoch train time: 0:00:06.666393
+elapsed time: 0:15:22.630335
+**** EPOCH 136 ****
+---- EPOCH 136 TRAINING ----
+2019-09-27 05:58:03.887752
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 109.18
+ ---- batch: 020 ----
+mean loss: 104.44
+ ---- batch: 030 ----
+mean loss: 106.77
+train mean loss: 106.23
+epoch train time: 0:00:06.721111
+elapsed time: 0:15:29.352226
+**** EPOCH 137 ****
+---- EPOCH 137 TRAINING ----
+2019-09-27 05:58:10.609645
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 107.79
+ ---- batch: 020 ----
+mean loss: 108.42
+ ---- batch: 030 ----
+mean loss: 104.13
+train mean loss: 106.46
+epoch train time: 0:00:06.686380
+elapsed time: 0:15:36.039429
+**** EPOCH 138 ****
+---- EPOCH 138 TRAINING ----
+2019-09-27 05:58:17.296848
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 106.00
+ ---- batch: 020 ----
+mean loss: 107.28
+ ---- batch: 030 ----
+mean loss: 105.57
+train mean loss: 106.40
+epoch train time: 0:00:06.733587
+elapsed time: 0:15:42.773861
+**** EPOCH 139 ****
+---- EPOCH 139 TRAINING ----
+2019-09-27 05:58:24.031250
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 105.99
+ ---- batch: 020 ----
+mean loss: 105.27
+ ---- batch: 030 ----
+mean loss: 105.63
+train mean loss: 105.62
+epoch train time: 0:00:06.724214
+elapsed time: 0:15:49.498873
+**** EPOCH 140 ****
+---- EPOCH 140 TRAINING ----
+2019-09-27 05:58:30.756260
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 110.60
+ ---- batch: 020 ----
+mean loss: 102.62
+ ---- batch: 030 ----
+mean loss: 106.05
+train mean loss: 105.82
+epoch train time: 0:00:06.682941
+elapsed time: 0:15:56.182600
+**** EPOCH 141 ****
+---- EPOCH 141 TRAINING ----
+2019-09-27 05:58:37.440021
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 106.50
+ ---- batch: 020 ----
+mean loss: 106.06
+ ---- batch: 030 ----
+mean loss: 110.18
+train mean loss: 107.73
+epoch train time: 0:00:06.661868
+elapsed time: 0:16:02.845247
+**** EPOCH 142 ****
+---- EPOCH 142 TRAINING ----
+2019-09-27 05:58:44.102670
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 104.16
+ ---- batch: 020 ----
+mean loss: 105.63
+ ---- batch: 030 ----
+mean loss: 106.17
+train mean loss: 103.80
+epoch train time: 0:00:06.642008
+elapsed time: 0:16:09.488141
+**** EPOCH 143 ****
+---- EPOCH 143 TRAINING ----
+2019-09-27 05:58:50.745581
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 102.62
+ ---- batch: 020 ----
+mean loss: 104.45
+ ---- batch: 030 ----
+mean loss: 106.54
+train mean loss: 104.57
+epoch train time: 0:00:06.823645
+elapsed time: 0:16:16.312709
+**** EPOCH 144 ****
+---- EPOCH 144 TRAINING ----
+2019-09-27 05:58:57.570166
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 105.11
+ ---- batch: 020 ----
+mean loss: 104.53
+ ---- batch: 030 ----
+mean loss: 103.11
+train mean loss: 104.86
+epoch train time: 0:00:06.846364
+elapsed time: 0:16:23.159882
+**** EPOCH 145 ****
+---- EPOCH 145 TRAINING ----
+2019-09-27 05:59:04.417284
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 105.85
+ ---- batch: 020 ----
+mean loss: 105.44
+ ---- batch: 030 ----
+mean loss: 101.25
+train mean loss: 103.95
+epoch train time: 0:00:06.759408
+elapsed time: 0:16:29.920128
+**** EPOCH 146 ****
+---- EPOCH 146 TRAINING ----
+2019-09-27 05:59:11.177569
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 104.33
+ ---- batch: 020 ----
+mean loss: 104.90
+ ---- batch: 030 ----
+mean loss: 104.91
+train mean loss: 104.46
+epoch train time: 0:00:06.709296
+elapsed time: 0:16:36.630212
+**** EPOCH 147 ****
+---- EPOCH 147 TRAINING ----
+2019-09-27 05:59:17.887619
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 103.57
+ ---- batch: 020 ----
+mean loss: 103.75
+ ---- batch: 030 ----
+mean loss: 103.54
+train mean loss: 104.24
+epoch train time: 0:00:06.713192
+elapsed time: 0:16:43.344168
+**** EPOCH 148 ****
+---- EPOCH 148 TRAINING ----
+2019-09-27 05:59:24.601567
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 104.19
+ ---- batch: 020 ----
+mean loss: 103.65
+ ---- batch: 030 ----
+mean loss: 103.32
+train mean loss: 103.67
+epoch train time: 0:00:06.933320
+elapsed time: 0:16:50.278448
+**** EPOCH 149 ****
+---- EPOCH 149 TRAINING ----
+2019-09-27 05:59:31.535744
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 103.92
+ ---- batch: 020 ----
+mean loss: 102.43
+ ---- batch: 030 ----
+mean loss: 102.20
+train mean loss: 103.34
+epoch train time: 0:00:06.926113
+elapsed time: 0:16:57.205312
+**** EPOCH 150 ****
+---- EPOCH 150 TRAINING ----
+2019-09-27 05:59:38.462726
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 98.02
+ ---- batch: 020 ----
+mean loss: 105.29
+ ---- batch: 030 ----
+mean loss: 104.78
+train mean loss: 102.47
+epoch train time: 0:00:06.894632
+elapsed time: 0:17:04.100783
+**** EPOCH 151 ****
+---- EPOCH 151 TRAINING ----
+2019-09-27 05:59:45.358209
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 101.12
+ ---- batch: 020 ----
+mean loss: 102.64
+ ---- batch: 030 ----
+mean loss: 104.73
+train mean loss: 103.10
+epoch train time: 0:00:06.829636
+elapsed time: 0:17:10.931455
+**** EPOCH 152 ****
+---- EPOCH 152 TRAINING ----
+2019-09-27 05:59:52.188880
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 101.70
+ ---- batch: 020 ----
+mean loss: 104.48
+ ---- batch: 030 ----
+mean loss: 97.54
+train mean loss: 102.13
+epoch train time: 0:00:06.885309
+elapsed time: 0:17:17.817585
+**** EPOCH 153 ****
+---- EPOCH 153 TRAINING ----
+2019-09-27 05:59:59.074993
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 102.25
+ ---- batch: 020 ----
+mean loss: 102.43
+ ---- batch: 030 ----
+mean loss: 104.35
+train mean loss: 102.63
+epoch train time: 0:00:06.895233
+elapsed time: 0:17:24.713598
+**** EPOCH 154 ****
+---- EPOCH 154 TRAINING ----
+2019-09-27 06:00:05.971008
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 103.78
+ ---- batch: 020 ----
+mean loss: 101.31
+ ---- batch: 030 ----
+mean loss: 103.80
+train mean loss: 102.07
+epoch train time: 0:00:06.966920
+elapsed time: 0:17:31.681283
+**** EPOCH 155 ****
+---- EPOCH 155 TRAINING ----
+2019-09-27 06:00:12.938684
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 102.41
+ ---- batch: 020 ----
+mean loss: 101.86
+ ---- batch: 030 ----
+mean loss: 101.46
+train mean loss: 101.66
+epoch train time: 0:00:06.868390
+elapsed time: 0:17:38.550512
+**** EPOCH 156 ****
+---- EPOCH 156 TRAINING ----
+2019-09-27 06:00:19.807929
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 101.72
+ ---- batch: 020 ----
+mean loss: 98.96
+ ---- batch: 030 ----
+mean loss: 101.42
+train mean loss: 100.63
+epoch train time: 0:00:06.872480
+elapsed time: 0:17:45.423843
+**** EPOCH 157 ****
+---- EPOCH 157 TRAINING ----
+2019-09-27 06:00:26.681303
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 103.86
+ ---- batch: 020 ----
+mean loss: 100.44
+ ---- batch: 030 ----
+mean loss: 102.27
+train mean loss: 101.56
+epoch train time: 0:00:06.899231
+elapsed time: 0:17:52.323886
+**** EPOCH 158 ****
+---- EPOCH 158 TRAINING ----
+2019-09-27 06:00:33.581278
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 99.90
+ ---- batch: 020 ----
+mean loss: 100.73
+ ---- batch: 030 ----
+mean loss: 101.55
+train mean loss: 100.50
+epoch train time: 0:00:06.831786
+elapsed time: 0:17:59.156449
+**** EPOCH 159 ****
+---- EPOCH 159 TRAINING ----
+2019-09-27 06:00:40.413843
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 103.62
+ ---- batch: 020 ----
+mean loss: 98.34
+ ---- batch: 030 ----
+mean loss: 98.94
+train mean loss: 100.75
+epoch train time: 0:00:06.880156
+elapsed time: 0:18:06.037436
+**** EPOCH 160 ****
+---- EPOCH 160 TRAINING ----
+2019-09-27 06:00:47.294866
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 100.24
+ ---- batch: 020 ----
+mean loss: 99.89
+ ---- batch: 030 ----
+mean loss: 103.81
+train mean loss: 101.88
+epoch train time: 0:00:06.779246
+elapsed time: 0:18:12.817519
+**** EPOCH 161 ****
+---- EPOCH 161 TRAINING ----
+2019-09-27 06:00:54.074918
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 104.50
+ ---- batch: 020 ----
+mean loss: 100.13
+ ---- batch: 030 ----
+mean loss: 100.57
+train mean loss: 102.08
+epoch train time: 0:00:06.955919
+elapsed time: 0:18:19.774199
+**** EPOCH 162 ****
+---- EPOCH 162 TRAINING ----
+2019-09-27 06:01:01.031599
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 99.51
+ ---- batch: 020 ----
+mean loss: 101.74
+ ---- batch: 030 ----
+mean loss: 101.13
+train mean loss: 100.29
+epoch train time: 0:00:06.950589
+elapsed time: 0:18:26.725567
+**** EPOCH 163 ****
+---- EPOCH 163 TRAINING ----
+2019-09-27 06:01:07.982965
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 99.41
+ ---- batch: 020 ----
+mean loss: 100.71
+ ---- batch: 030 ----
+mean loss: 97.86
+train mean loss: 99.36
+epoch train time: 0:00:06.971217
+elapsed time: 0:18:33.697553
+**** EPOCH 164 ****
+---- EPOCH 164 TRAINING ----
+2019-09-27 06:01:14.955003
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 102.44
+ ---- batch: 020 ----
+mean loss: 97.47
+ ---- batch: 030 ----
+mean loss: 98.56
+train mean loss: 99.50
+epoch train time: 0:00:06.827845
+elapsed time: 0:18:40.526204
+**** EPOCH 165 ****
+---- EPOCH 165 TRAINING ----
+2019-09-27 06:01:21.783613
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 98.91
+ ---- batch: 020 ----
+mean loss: 97.62
+ ---- batch: 030 ----
+mean loss: 101.85
+train mean loss: 99.45
+epoch train time: 0:00:06.886721
+elapsed time: 0:18:47.413694
+**** EPOCH 166 ****
+---- EPOCH 166 TRAINING ----
+2019-09-27 06:01:28.671088
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 99.59
+ ---- batch: 020 ----
+mean loss: 99.18
+ ---- batch: 030 ----
+mean loss: 99.10
+train mean loss: 99.65
+epoch train time: 0:00:06.722974
+elapsed time: 0:18:54.137388
+**** EPOCH 167 ****
+---- EPOCH 167 TRAINING ----
+2019-09-27 06:01:35.394780
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 100.13
+ ---- batch: 020 ----
+mean loss: 97.35
+ ---- batch: 030 ----
+mean loss: 102.29
+train mean loss: 100.52
+epoch train time: 0:00:06.656464
+elapsed time: 0:19:00.794617
+**** EPOCH 168 ****
+---- EPOCH 168 TRAINING ----
+2019-09-27 06:01:42.052018
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 104.44
+ ---- batch: 020 ----
+mean loss: 97.27
+ ---- batch: 030 ----
+mean loss: 99.11
+train mean loss: 100.05
+epoch train time: 0:00:06.510194
+elapsed time: 0:19:07.305615
+**** EPOCH 169 ****
+---- EPOCH 169 TRAINING ----
+2019-09-27 06:01:48.563006
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 101.33
+ ---- batch: 020 ----
+mean loss: 98.12
+ ---- batch: 030 ----
+mean loss: 96.67
+train mean loss: 99.03
+epoch train time: 0:00:06.638667
+elapsed time: 0:19:13.944959
+**** EPOCH 170 ****
+---- EPOCH 170 TRAINING ----
+2019-09-27 06:01:55.202395
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 98.11
+ ---- batch: 020 ----
+mean loss: 101.46
+ ---- batch: 030 ----
+mean loss: 97.76
+train mean loss: 99.69
+epoch train time: 0:00:06.561751
+elapsed time: 0:19:20.507492
+**** EPOCH 171 ****
+---- EPOCH 171 TRAINING ----
+2019-09-27 06:02:01.764884
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 99.79
+ ---- batch: 020 ----
+mean loss: 97.61
+ ---- batch: 030 ----
+mean loss: 98.79
+train mean loss: 99.37
+epoch train time: 0:00:06.566424
+elapsed time: 0:19:27.074733
+**** EPOCH 172 ****
+---- EPOCH 172 TRAINING ----
+2019-09-27 06:02:08.332139
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 99.81
+ ---- batch: 020 ----
+mean loss: 95.62
+ ---- batch: 030 ----
+mean loss: 97.87
+train mean loss: 97.92
+epoch train time: 0:00:06.845585
+elapsed time: 0:19:33.921183
+**** EPOCH 173 ****
+---- EPOCH 173 TRAINING ----
+2019-09-27 06:02:15.178615
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 97.19
+ ---- batch: 020 ----
+mean loss: 100.24
+ ---- batch: 030 ----
+mean loss: 99.49
+train mean loss: 98.99
+epoch train time: 0:00:06.764912
+elapsed time: 0:19:40.687081
+**** EPOCH 174 ****
+---- EPOCH 174 TRAINING ----
+2019-09-27 06:02:21.944384
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 97.76
+ ---- batch: 020 ----
+mean loss: 98.39
+ ---- batch: 030 ----
+mean loss: 98.13
+train mean loss: 97.31
+epoch train time: 0:00:06.835410
+elapsed time: 0:19:47.523201
+**** EPOCH 175 ****
+---- EPOCH 175 TRAINING ----
+2019-09-27 06:02:28.780681
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 97.00
+ ---- batch: 020 ----
+mean loss: 100.34
+ ---- batch: 030 ----
+mean loss: 97.50
+train mean loss: 98.65
+epoch train time: 0:00:06.769819
+elapsed time: 0:19:54.293846
+**** EPOCH 176 ****
+---- EPOCH 176 TRAINING ----
+2019-09-27 06:02:35.551258
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 99.04
+ ---- batch: 020 ----
+mean loss: 97.62
+ ---- batch: 030 ----
+mean loss: 99.08
+train mean loss: 98.03
+epoch train time: 0:00:06.798969
+elapsed time: 0:20:01.093584
+**** EPOCH 177 ****
+---- EPOCH 177 TRAINING ----
+2019-09-27 06:02:42.350982
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 101.11
+ ---- batch: 020 ----
+mean loss: 96.98
+ ---- batch: 030 ----
+mean loss: 98.51
+train mean loss: 98.29
+epoch train time: 0:00:06.695644
+elapsed time: 0:20:07.790027
+**** EPOCH 178 ****
+---- EPOCH 178 TRAINING ----
+2019-09-27 06:02:49.047426
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 96.26
+ ---- batch: 020 ----
+mean loss: 97.97
+ ---- batch: 030 ----
+mean loss: 93.68
+train mean loss: 96.27
+epoch train time: 0:00:06.797773
+elapsed time: 0:20:14.588628
+**** EPOCH 179 ****
+---- EPOCH 179 TRAINING ----
+2019-09-27 06:02:55.846101
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 97.73
+ ---- batch: 020 ----
+mean loss: 93.52
+ ---- batch: 030 ----
+mean loss: 96.50
+train mean loss: 96.56
+epoch train time: 0:00:06.736575
+elapsed time: 0:20:21.326008
+**** EPOCH 180 ****
+---- EPOCH 180 TRAINING ----
+2019-09-27 06:03:02.583396
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 95.58
+ ---- batch: 020 ----
+mean loss: 100.62
+ ---- batch: 030 ----
+mean loss: 95.35
+train mean loss: 96.70
+epoch train time: 0:00:06.825601
+elapsed time: 0:20:28.152431
+**** EPOCH 181 ****
+---- EPOCH 181 TRAINING ----
+2019-09-27 06:03:09.409866
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 96.57
+ ---- batch: 020 ----
+mean loss: 98.28
+ ---- batch: 030 ----
+mean loss: 97.15
+train mean loss: 96.96
+epoch train time: 0:00:06.735357
+elapsed time: 0:20:34.888650
+**** EPOCH 182 ****
+---- EPOCH 182 TRAINING ----
+2019-09-27 06:03:16.146063
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 94.83
+ ---- batch: 020 ----
+mean loss: 96.44
+ ---- batch: 030 ----
+mean loss: 95.46
+train mean loss: 96.11
+epoch train time: 0:00:06.828894
+elapsed time: 0:20:41.718324
+**** EPOCH 183 ****
+---- EPOCH 183 TRAINING ----
+2019-09-27 06:03:22.975708
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 96.03
+ ---- batch: 020 ----
+mean loss: 95.57
+ ---- batch: 030 ----
+mean loss: 96.87
+train mean loss: 96.50
+epoch train time: 0:00:06.769860
+elapsed time: 0:20:48.488971
+**** EPOCH 184 ****
+---- EPOCH 184 TRAINING ----
+2019-09-27 06:03:29.746384
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 94.90
+ ---- batch: 020 ----
+mean loss: 94.32
+ ---- batch: 030 ----
+mean loss: 95.88
+train mean loss: 95.50
+epoch train time: 0:00:06.824148
+elapsed time: 0:20:55.313900
+**** EPOCH 185 ****
+---- EPOCH 185 TRAINING ----
+2019-09-27 06:03:36.571306
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 96.56
+ ---- batch: 020 ----
+mean loss: 98.65
+ ---- batch: 030 ----
+mean loss: 93.04
+train mean loss: 96.85
+epoch train time: 0:00:06.782635
+elapsed time: 0:21:02.097462
+**** EPOCH 186 ****
+---- EPOCH 186 TRAINING ----
+2019-09-27 06:03:43.354871
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 103.78
+ ---- batch: 020 ----
+mean loss: 97.13
+ ---- batch: 030 ----
+mean loss: 94.99
+train mean loss: 97.71
+epoch train time: 0:00:06.853370
+elapsed time: 0:21:08.951606
+**** EPOCH 187 ****
+---- EPOCH 187 TRAINING ----
+2019-09-27 06:03:50.209026
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 94.09
+ ---- batch: 020 ----
+mean loss: 94.54
+ ---- batch: 030 ----
+mean loss: 98.46
+train mean loss: 95.54
+epoch train time: 0:00:06.924379
+elapsed time: 0:21:15.876806
+**** EPOCH 188 ****
+---- EPOCH 188 TRAINING ----
+2019-09-27 06:03:57.134209
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 95.01
+ ---- batch: 020 ----
+mean loss: 93.77
+ ---- batch: 030 ----
+mean loss: 95.76
+train mean loss: 94.91
+epoch train time: 0:00:06.802788
+elapsed time: 0:21:22.680390
+**** EPOCH 189 ****
+---- EPOCH 189 TRAINING ----
+2019-09-27 06:04:03.937789
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 94.84
+ ---- batch: 020 ----
+mean loss: 94.98
+ ---- batch: 030 ----
+mean loss: 98.06
+train mean loss: 95.53
+epoch train time: 0:00:06.809880
+elapsed time: 0:21:29.491030
+**** EPOCH 190 ****
+---- EPOCH 190 TRAINING ----
+2019-09-27 06:04:10.748457
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 96.50
+ ---- batch: 020 ----
+mean loss: 94.50
+ ---- batch: 030 ----
+mean loss: 95.05
+train mean loss: 95.37
+epoch train time: 0:00:06.833694
+elapsed time: 0:21:36.325498
+**** EPOCH 191 ****
+---- EPOCH 191 TRAINING ----
+2019-09-27 06:04:17.582896
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 96.40
+ ---- batch: 020 ----
+mean loss: 93.44
+ ---- batch: 030 ----
+mean loss: 94.90
+train mean loss: 95.04
+epoch train time: 0:00:06.731297
+elapsed time: 0:21:43.057527
+**** EPOCH 192 ****
+---- EPOCH 192 TRAINING ----
+2019-09-27 06:04:24.314930
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 95.25
+ ---- batch: 020 ----
+mean loss: 94.75
+ ---- batch: 030 ----
+mean loss: 98.36
+train mean loss: 95.56
+epoch train time: 0:00:06.695370
+elapsed time: 0:21:49.753687
+**** EPOCH 193 ****
+---- EPOCH 193 TRAINING ----
+2019-09-27 06:04:31.011081
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 95.91
+ ---- batch: 020 ----
+mean loss: 97.42
+ ---- batch: 030 ----
+mean loss: 92.60
+train mean loss: 94.91
+epoch train time: 0:00:06.960100
+elapsed time: 0:21:56.714559
+**** EPOCH 194 ****
+---- EPOCH 194 TRAINING ----
+2019-09-27 06:04:37.971970
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 95.12
+ ---- batch: 020 ----
+mean loss: 97.33
+ ---- batch: 030 ----
+mean loss: 93.97
+train mean loss: 95.56
+epoch train time: 0:00:06.796180
+elapsed time: 0:22:03.511535
+**** EPOCH 195 ****
+---- EPOCH 195 TRAINING ----
+2019-09-27 06:04:44.768942
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 94.89
+ ---- batch: 020 ----
+mean loss: 97.58
+ ---- batch: 030 ----
+mean loss: 93.67
+train mean loss: 94.93
+epoch train time: 0:00:06.882277
+elapsed time: 0:22:10.394648
+**** EPOCH 196 ****
+---- EPOCH 196 TRAINING ----
+2019-09-27 06:04:51.652062
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 94.94
+ ---- batch: 020 ----
+mean loss: 96.38
+ ---- batch: 030 ----
+mean loss: 90.26
+train mean loss: 94.43
+epoch train time: 0:00:06.943951
+elapsed time: 0:22:17.339417
+**** EPOCH 197 ****
+---- EPOCH 197 TRAINING ----
+2019-09-27 06:04:58.596828
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 94.37
+ ---- batch: 020 ----
+mean loss: 95.70
+ ---- batch: 030 ----
+mean loss: 92.64
+train mean loss: 93.56
+epoch train time: 0:00:06.845712
+elapsed time: 0:22:24.185891
+**** EPOCH 198 ****
+---- EPOCH 198 TRAINING ----
+2019-09-27 06:05:05.443293
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 91.82
+ ---- batch: 020 ----
+mean loss: 93.36
+ ---- batch: 030 ----
+mean loss: 95.24
+train mean loss: 93.69
+epoch train time: 0:00:07.015309
+elapsed time: 0:22:31.202023
+**** EPOCH 199 ****
+---- EPOCH 199 TRAINING ----
+2019-09-27 06:05:12.459508
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 96.15
+ ---- batch: 020 ----
+mean loss: 93.76
+ ---- batch: 030 ----
+mean loss: 95.95
+train mean loss: 95.05
+epoch train time: 0:00:06.947102
+elapsed time: 0:22:38.150110
+**** EPOCH 200 ****
+---- EPOCH 200 TRAINING ----
+2019-09-27 06:05:19.407543
+learning rate: 0.001
+ ---- batch: 010 ----
+mean loss: 92.57
+ ---- batch: 020 ----
+mean loss: 95.84
+ ---- batch: 030 ----
+mean loss: 95.02
+train mean loss: 94.20
+epoch train time: 0:00:06.964384
+elapsed time: 0:22:45.115413
+**** EPOCH 201 ****
+---- EPOCH 201 TRAINING ----
+2019-09-27 06:05:26.372929
+learning rate: 0.0001
+ ---- batch: 010 ----
+mean loss: 92.15
+ ---- batch: 020 ----
+mean loss: 92.39
+ ---- batch: 030 ----
+mean loss: 95.02
+train mean loss: 92.92
+epoch train time: 0:00:06.939310
+elapsed time: 0:22:52.055696
+**** EPOCH 202 ****
+---- EPOCH 202 TRAINING ----
+2019-09-27 06:05:33.312989
+learning rate: 0.0001
+ ---- batch: 010 ----
+mean loss: 91.90
+ ---- batch: 020 ----
+mean loss: 91.94
+ ---- batch: 030 ----
+mean loss: 92.22
+train mean loss: 92.41
+epoch train time: 0:00:06.815298
+elapsed time: 0:22:58.871663
+**** EPOCH 203 ****
+---- EPOCH 203 TRAINING ----
+2019-09-27 06:05:40.129063
+learning rate: 0.0001
+ ---- batch: 010 ----
+mean loss: 92.94
+ ---- batch: 020 ----
+mean loss: 93.53
+ ---- batch: 030 ----
+mean loss: 93.78
+train mean loss: 93.66
+epoch train time: 0:00:06.861641
+elapsed time: 0:23:05.734091
+**** EPOCH 204 ****
+---- EPOCH 204 TRAINING ----
+2019-09-27 06:05:46.991488
+learning rate: 0.0001
+ ---- batch: 010 ----
+mean loss: 95.98
+ ---- batch: 020 ----
+mean loss: 90.10
+ ---- batch: 030 ----
+mean loss: 92.82
+train mean loss: 92.75
+epoch train time: 0:00:06.854529
+elapsed time: 0:23:12.589484
+**** EPOCH 205 ****
+---- EPOCH 205 TRAINING ----
+2019-09-27 06:05:53.846899
+learning rate: 0.0001
+ ---- batch: 010 ----
+mean loss: 95.75
+ ---- batch: 020 ----
+mean loss: 92.01
+ ---- batch: 030 ----
+mean loss: 90.46
+train mean loss: 93.42
+epoch train time: 0:00:06.940910
+elapsed time: 0:23:19.531230
+**** EPOCH 206 ****
+---- EPOCH 206 TRAINING ----
+2019-09-27 06:06:00.788657
+learning rate: 0.0001
+ ---- batch: 010 ----
+mean loss: 93.70
+ ---- batch: 020 ----
+mean loss: 93.61
+ ---- batch: 030 ----
+mean loss: 90.35
+train mean loss: 92.79
+epoch train time: 0:00:06.905638
+elapsed time: 0:23:26.437664
+**** EPOCH 207 ****
+---- EPOCH 207 TRAINING ----
+2019-09-27 06:06:07.695051
+learning rate: 0.0001
+ ---- batch: 010 ----
+mean loss: 94.27
+ ---- batch: 020 ----
+mean loss: 90.58
+ ---- batch: 030 ----
+mean loss: 93.31
+train mean loss: 92.68
+epoch train time: 0:00:06.920534
+elapsed time: 0:23:33.359017
+**** EPOCH 208 ****
+---- EPOCH 208 TRAINING ----
+2019-09-27 06:06:14.616452
+learning rate: 0.0001
+ ---- batch: 010 ----
+mean loss: 93.76
+ ---- batch: 020 ----
+mean loss: 89.15
+ ---- batch: 030 ----
+mean loss: 93.08
+train mean loss: 93.13
+epoch train time: 0:00:06.863570
+elapsed time: 0:23:40.223416
+**** EPOCH 209 ****
+---- EPOCH 209 TRAINING ----
+2019-09-27 06:06:21.480819
+learning rate: 0.0001
+ ---- batch: 010 ----
+mean loss: 94.32
+ ---- batch: 020 ----
+mean loss: 92.96
+ ---- batch: 030 ----
+mean loss: 91.16
+train mean loss: 92.28
+epoch train time: 0:00:06.854699
+elapsed time: 0:23:47.078945
+**** EPOCH 210 ****
+---- EPOCH 210 TRAINING ----
+2019-09-27 06:06:28.336345
+learning rate: 0.0001
+ ---- batch: 010 ----
+mean loss: 94.12
+ ---- batch: 020 ----
+mean loss: 92.27
+ ---- batch: 030 ----
+mean loss: 93.41
+train mean loss: 92.78
+epoch train time: 0:00:06.916473
+elapsed time: 0:23:53.996254
+**** EPOCH 211 ****
+---- EPOCH 211 TRAINING ----
+2019-09-27 06:06:35.253668
+learning rate: 0.0001
+ ---- batch: 010 ----
+mean loss: 94.51
+ ---- batch: 020 ----
+mean loss: 94.04
+ ---- batch: 030 ----
+mean loss: 92.19
+train mean loss: 93.28
+epoch train time: 0:00:06.827047
+elapsed time: 0:24:00.824099
+**** EPOCH 212 ****
+---- EPOCH 212 TRAINING ----
+2019-09-27 06:06:42.081523
+learning rate: 0.0001
+ ---- batch: 010 ----
+mean loss: 89.51
+ ---- batch: 020 ----
+mean loss: 97.18
+ ---- batch: 030 ----
+mean loss: 92.31
+train mean loss: 92.58
+epoch train time: 0:00:06.897226
+elapsed time: 0:24:07.722253
+**** EPOCH 213 ****
+---- EPOCH 213 TRAINING ----
+2019-09-27 06:06:48.979642
+learning rate: 0.0001
+ ---- batch: 010 ----
+mean loss: 94.22
+ ---- batch: 020 ----
+mean loss: 90.33
+ ---- batch: 030 ----
+mean loss: 92.15
+train mean loss: 92.39
+epoch train time: 0:00:06.902658
+elapsed time: 0:24:14.625659
+**** EPOCH 214 ****
+---- EPOCH 214 TRAINING ----
+2019-09-27 06:06:55.883050
+learning rate: 0.0001
+ ---- batch: 010 ----
+mean loss: 93.35
+ ---- batch: 020 ----
+mean loss: 93.50
+ ---- batch: 030 ----
+mean loss: 89.45
+train mean loss: 92.90
+epoch train time: 0:00:06.812544
+elapsed time: 0:24:21.439066
+**** EPOCH 215 ****
+---- EPOCH 215 TRAINING ----
+2019-09-27 06:07:02.696492
+learning rate: 0.0001
+ ---- batch: 010 ----
+mean loss: 94.49
+ ---- batch: 020 ----
+mean loss: 89.93
+ ---- batch: 030 ----
+mean loss: 97.12
+train mean loss: 92.99
+epoch train time: 0:00:06.920227
+elapsed time: 0:24:28.360065
+**** EPOCH 216 ****
+---- EPOCH 216 TRAINING ----
+2019-09-27 06:07:09.617456
+learning rate: 0.0001
+ ---- batch: 010 ----
+mean loss: 93.41
+ ---- batch: 020 ----
+mean loss: 95.02
+ ---- batch: 030 ----
+mean loss: 90.01
+train mean loss: 92.44
+epoch train time: 0:00:06.893817
+elapsed time: 0:24:35.254632
+**** EPOCH 217 ****
+---- EPOCH 217 TRAINING ----
+2019-09-27 06:07:16.512035
+learning rate: 0.0001
+ ---- batch: 010 ----
+mean loss: 90.77
+ ---- batch: 020 ----
+mean loss: 93.54
+ ---- batch: 030 ----
+mean loss: 94.66
+train mean loss: 92.66
+epoch train time: 0:00:06.870639
+elapsed time: 0:24:42.126088
+**** EPOCH 218 ****
+---- EPOCH 218 TRAINING ----
+2019-09-27 06:07:23.383491
+learning rate: 0.0001
+ ---- batch: 010 ----
+mean loss: 94.07
+ ---- batch: 020 ----
+mean loss: 91.79
+ ---- batch: 030 ----
+mean loss: 92.10
+train mean loss: 93.30
+epoch train time: 0:00:06.906191
+elapsed time: 0:24:49.033035
+**** EPOCH 219 ****
+---- EPOCH 219 TRAINING ----
+2019-09-27 06:07:30.290438
+learning rate: 0.0001
+ ---- batch: 010 ----
+mean loss: 89.06
+ ---- batch: 020 ----
+mean loss: 94.37
+ ---- batch: 030 ----
+mean loss: 94.28
+train mean loss: 92.43
+epoch train time: 0:00:06.805758
+elapsed time: 0:24:55.839591
+**** EPOCH 220 ****
+---- EPOCH 220 TRAINING ----
+2019-09-27 06:07:37.097000
+learning rate: 0.0001
+ ---- batch: 010 ----
+mean loss: 91.47
+ ---- batch: 020 ----
+mean loss: 92.43
+ ---- batch: 030 ----
+mean loss: 93.55
+train mean loss: 92.17
+epoch train time: 0:00:06.899360
+elapsed time: 0:25:02.739753
+**** EPOCH 221 ****
+---- EPOCH 221 TRAINING ----
+2019-09-27 06:07:43.997149
+learning rate: 0.0001
+ ---- batch: 010 ----
+mean loss: 92.02
+ ---- batch: 020 ----
+mean loss: 92.29
+ ---- batch: 030 ----
+mean loss: 92.78
+train mean loss: 92.67
+epoch train time: 0:00:06.827834
+elapsed time: 0:25:09.568312
+**** EPOCH 222 ****
+---- EPOCH 222 TRAINING ----
+2019-09-27 06:07:50.825754
+learning rate: 0.0001
+ ---- batch: 010 ----
+mean loss: 94.87
+ ---- batch: 020 ----
+mean loss: 93.22
+ ---- batch: 030 ----
+mean loss: 89.01
+train mean loss: 93.35
+epoch train time: 0:00:06.845186
+elapsed time: 0:25:16.414284
+**** EPOCH 223 ****
+---- EPOCH 223 TRAINING ----
+2019-09-27 06:07:57.671705
+learning rate: 0.0001
+ ---- batch: 010 ----
+mean loss: 93.09
+ ---- batch: 020 ----
+mean loss: 91.55
+ ---- batch: 030 ----
+mean loss: 94.88
+train mean loss: 92.61
+epoch train time: 0:00:06.840265
+elapsed time: 0:25:23.255325
+**** EPOCH 224 ****
+---- EPOCH 224 TRAINING ----
+2019-09-27 06:08:04.512715
+learning rate: 0.0001
+ ---- batch: 010 ----
+mean loss: 95.28
+ ---- batch: 020 ----
+mean loss: 90.88
+ ---- batch: 030 ----
+mean loss: 93.38
+train mean loss: 93.30
+epoch train time: 0:00:06.970058
+elapsed time: 0:25:30.226164
+**** EPOCH 225 ****
+---- EPOCH 225 TRAINING ----
+2019-09-27 06:08:11.483558
+learning rate: 0.0001
+ ---- batch: 010 ----
+mean loss: 90.71
+ ---- batch: 020 ----
+mean loss: 89.98
+ ---- batch: 030 ----
+mean loss: 94.94
+train mean loss: 92.46
+epoch train time: 0:00:06.882110
+elapsed time: 0:25:37.109012
+**** EPOCH 226 ****
+---- EPOCH 226 TRAINING ----
+2019-09-27 06:08:18.366400
+learning rate: 0.0001
+ ---- batch: 010 ----
+mean loss: 92.38
+ ---- batch: 020 ----
+mean loss: 92.05
+ ---- batch: 030 ----
+mean loss: 93.23
+train mean loss: 92.59
+epoch train time: 0:00:06.852760
+elapsed time: 0:25:43.962651
+**** EPOCH 227 ****
+---- EPOCH 227 TRAINING ----
+2019-09-27 06:08:25.220053
+learning rate: 0.0001
+ ---- batch: 010 ----
+mean loss: 92.79
+ ---- batch: 020 ----
+mean loss: 94.92
+ ---- batch: 030 ----
+mean loss: 90.23
+train mean loss: 92.55
+epoch train time: 0:00:06.920081
+elapsed time: 0:25:50.883533
+**** EPOCH 228 ****
+---- EPOCH 228 TRAINING ----
+2019-09-27 06:08:32.140948
+learning rate: 0.0001
+ ---- batch: 010 ----
+mean loss: 92.44
+ ---- batch: 020 ----
+mean loss: 92.15
+ ---- batch: 030 ----
+mean loss: 94.87
+train mean loss: 93.47
+epoch train time: 0:00:06.844476
+elapsed time: 0:25:57.728874
+**** EPOCH 229 ****
+---- EPOCH 229 TRAINING ----
+2019-09-27 06:08:38.986308
+learning rate: 0.0001
+ ---- batch: 010 ----
+mean loss: 91.03
+ ---- batch: 020 ----
+mean loss: 93.69
+ ---- batch: 030 ----
+mean loss: 88.98
+train mean loss: 91.76
+epoch train time: 0:00:06.758019
+elapsed time: 0:26:04.487689
+**** EPOCH 230 ****
+---- EPOCH 230 TRAINING ----
+2019-09-27 06:08:45.745078
+learning rate: 0.0001
+ ---- batch: 010 ----
+mean loss: 92.12
+ ---- batch: 020 ----
+mean loss: 94.06
+ ---- batch: 030 ----
+mean loss: 92.50
+train mean loss: 92.70
+epoch train time: 0:00:06.884095
+elapsed time: 0:26:11.372578
+**** EPOCH 231 ****
+---- EPOCH 231 TRAINING ----
+2019-09-27 06:08:52.629995
+learning rate: 0.0001
+ ---- batch: 010 ----
+mean loss: 91.79
+ ---- batch: 020 ----
+mean loss: 92.20
+ ---- batch: 030 ----
+mean loss: 90.94
+train mean loss: 91.94
+epoch train time: 0:00:06.980822
+elapsed time: 0:26:18.354214
+**** EPOCH 232 ****
+---- EPOCH 232 TRAINING ----
+2019-09-27 06:08:59.611638
+learning rate: 0.0001
+ ---- batch: 010 ----
+mean loss: 93.35
+ ---- batch: 020 ----
+mean loss: 91.90
+ ---- batch: 030 ----
+mean loss: 92.67
+train mean loss: 92.11
+epoch train time: 0:00:06.857668
+elapsed time: 0:26:25.212844
+**** EPOCH 233 ****
+---- EPOCH 233 TRAINING ----
+2019-09-27 06:09:06.470258
+learning rate: 0.0001
+ ---- batch: 010 ----
+mean loss: 91.00
+ ---- batch: 020 ----
+mean loss: 92.76
+ ---- batch: 030 ----
+mean loss: 90.10
+train mean loss: 92.59
+epoch train time: 0:00:07.024431
+elapsed time: 0:26:32.238304
+**** EPOCH 234 ****
+---- EPOCH 234 TRAINING ----
+2019-09-27 06:09:13.495599
+learning rate: 0.0001
+ ---- batch: 010 ----
+mean loss: 95.77
+ ---- batch: 020 ----
+mean loss: 90.56
+ ---- batch: 030 ----
+mean loss: 90.85
+train mean loss: 92.10
+epoch train time: 0:00:06.843527
+elapsed time: 0:26:39.082539
+**** EPOCH 235 ****
+---- EPOCH 235 TRAINING ----
+2019-09-27 06:09:20.339948
+learning rate: 0.0001
+ ---- batch: 010 ----
+mean loss: 93.45
+ ---- batch: 020 ----
+mean loss: 90.60
+ ---- batch: 030 ----
+mean loss: 91.38
+train mean loss: 91.90
+epoch train time: 0:00:06.922585
+elapsed time: 0:26:46.005902
+**** EPOCH 236 ****
+---- EPOCH 236 TRAINING ----
+2019-09-27 06:09:27.263300
+learning rate: 0.0001
+ ---- batch: 010 ----
+mean loss: 91.70
+ ---- batch: 020 ----
+mean loss: 91.03
+ ---- batch: 030 ----
+mean loss: 92.51
+train mean loss: 92.17
+epoch train time: 0:00:06.927135
+elapsed time: 0:26:52.933737
+**** EPOCH 237 ****
+---- EPOCH 237 TRAINING ----
+2019-09-27 06:09:34.191133
+learning rate: 0.0001
+ ---- batch: 010 ----
+mean loss: 92.11
+ ---- batch: 020 ----
+mean loss: 93.60
+ ---- batch: 030 ----
+mean loss: 92.62
+train mean loss: 92.52
+epoch train time: 0:00:06.842011
+elapsed time: 0:26:59.776576
+**** EPOCH 238 ****
+---- EPOCH 238 TRAINING ----
+2019-09-27 06:09:41.033969
+learning rate: 0.0001
+ ---- batch: 010 ----
+mean loss: 92.58
+ ---- batch: 020 ----
+mean loss: 92.36
+ ---- batch: 030 ----
+mean loss: 91.04
+train mean loss: 92.22
+epoch train time: 0:00:06.841979
+elapsed time: 0:27:06.619379
+**** EPOCH 239 ****
+---- EPOCH 239 TRAINING ----
+2019-09-27 06:09:47.876782
+learning rate: 0.0001
+ ---- batch: 010 ----
+mean loss: 91.61
+ ---- batch: 020 ----
+mean loss: 92.55
+ ---- batch: 030 ----
+mean loss: 90.16
+train mean loss: 92.66
+epoch train time: 0:00:06.772852
+elapsed time: 0:27:13.393022
+**** EPOCH 240 ****
+---- EPOCH 240 TRAINING ----
+2019-09-27 06:09:54.650422
+learning rate: 0.0001
+ ---- batch: 010 ----
+mean loss: 91.29
+ ---- batch: 020 ----
+mean loss: 92.54
+ ---- batch: 030 ----
+mean loss: 93.36
+train mean loss: 92.20
+epoch train time: 0:00:06.773390
+elapsed time: 0:27:20.167309
+**** EPOCH 241 ****
+---- EPOCH 241 TRAINING ----
+2019-09-27 06:10:01.424696
+learning rate: 0.0001
+ ---- batch: 010 ----
+mean loss: 92.90
+ ---- batch: 020 ----
+mean loss: 91.53
+ ---- batch: 030 ----
+mean loss: 92.86
+train mean loss: 91.90
+epoch train time: 0:00:06.670943
+elapsed time: 0:27:26.839002
+**** EPOCH 242 ****
+---- EPOCH 242 TRAINING ----
+2019-09-27 06:10:08.096414
+learning rate: 0.0001
+ ---- batch: 010 ----
+mean loss: 94.16
+ ---- batch: 020 ----
+mean loss: 93.54
+ ---- batch: 030 ----
+mean loss: 90.09
+train mean loss: 92.38
+epoch train time: 0:00:06.901820
+elapsed time: 0:27:33.741718
+**** EPOCH 243 ****
+---- EPOCH 243 TRAINING ----
+2019-09-27 06:10:14.999687
+learning rate: 0.0001
+ ---- batch: 010 ----
+mean loss: 92.68
+ ---- batch: 020 ----
+mean loss: 93.47
+ ---- batch: 030 ----
+mean loss: 90.15
+train mean loss: 91.93
+epoch train time: 0:00:06.796813
+elapsed time: 0:27:40.539864
+**** EPOCH 244 ****
+---- EPOCH 244 TRAINING ----
+2019-09-27 06:10:21.797269
+learning rate: 0.0001
+ ---- batch: 010 ----
+mean loss: 94.60
+ ---- batch: 020 ----
+mean loss: 91.42
+ ---- batch: 030 ----
+mean loss: 90.13
+train mean loss: 92.40
+epoch train time: 0:00:06.971551
+elapsed time: 0:27:47.512205
+**** EPOCH 245 ****
+---- EPOCH 245 TRAINING ----
+2019-09-27 06:10:28.769600
+learning rate: 0.0001
+ ---- batch: 010 ----
+mean loss: 94.77
+ ---- batch: 020 ----
+mean loss: 91.44
+ ---- batch: 030 ----
+mean loss: 91.59
+train mean loss: 92.38
+epoch train time: 0:00:06.916521
+elapsed time: 0:27:54.429523
+**** EPOCH 246 ****
+---- EPOCH 246 TRAINING ----
+2019-09-27 06:10:35.686918
+learning rate: 0.0001
+ ---- batch: 010 ----
+mean loss: 90.30
+ ---- batch: 020 ----
+mean loss: 93.22
+ ---- batch: 030 ----
+mean loss: 91.77
+train mean loss: 91.66
+epoch train time: 0:00:06.905611
+elapsed time: 0:28:01.335885
+**** EPOCH 247 ****
+---- EPOCH 247 TRAINING ----
+2019-09-27 06:10:42.593286
+learning rate: 0.0001
+ ---- batch: 010 ----
+mean loss: 94.21
+ ---- batch: 020 ----
+mean loss: 90.32
+ ---- batch: 030 ----
+mean loss: 89.40
+train mean loss: 91.89
+epoch train time: 0:00:06.953394
+elapsed time: 0:28:08.289983
+**** EPOCH 248 ****
+---- EPOCH 248 TRAINING ----
+2019-09-27 06:10:49.547380
+learning rate: 0.0001
+ ---- batch: 010 ----
+mean loss: 93.27
+ ---- batch: 020 ----
+mean loss: 92.34
+ ---- batch: 030 ----
+mean loss: 90.01
+train mean loss: 92.29
+epoch train time: 0:00:06.738424
+elapsed time: 0:28:15.029178
+**** EPOCH 249 ****
+---- EPOCH 249 TRAINING ----
+2019-09-27 06:10:56.286604
+learning rate: 0.0001
+ ---- batch: 010 ----
+mean loss: 87.65
+ ---- batch: 020 ----
+mean loss: 94.29
+ ---- batch: 030 ----
+mean loss: 95.94
+train mean loss: 92.50
+epoch train time: 0:00:06.830895
+elapsed time: 0:28:21.870191
+checkpoint saved in file: log/CMAPSS/FD001/min-max/bayesian_conv5_dense1/bayesian_conv5_dense1_1.00/bayesian_conv5_dense1_1.00_0/checkpoint.pth.tar
+**** end time: 2019-09-27 06:11:03.127458 ****

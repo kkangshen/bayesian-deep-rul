@@ -1,0 +1,1782 @@
+Namespace(batch_size=512, dataset='CMAPSS/FD001', gamma=0.1, learning_rate=0.001, log_dir='log/CMAPSS/FD001/min-max/bayesian_conv5_dense1/bayesian_conv5_dense1_0.125/bayesian_conv5_dense1_0.125_3', max_epoch=250, max_rul=125, metric='rmse', model='bayesian_conv5_dense1', momentum=0.9, normalization='min-max', num_mc=1, optimizer='adam', quantity=0.125, resume=False, step_size=200, visualize_step=50)
+pid: 28215
+use_cuda: True
+Dataset: CMAPSS/FD001
+Building BayesianConv5Dense1...
+Done.
+**** start time: 2019-09-27 14:13:32.234519 ****
+________________________________________________________________
+        Layer (type)               Output Shape         Param #
+================================================================
+    BayesianConv2d-1           [-1, 10, 31, 14]             200
+           Sigmoid-2           [-1, 10, 31, 14]               0
+    BayesianConv2d-3           [-1, 10, 30, 14]           2,000
+           Sigmoid-4           [-1, 10, 30, 14]               0
+    BayesianConv2d-5           [-1, 10, 31, 14]           2,000
+           Sigmoid-6           [-1, 10, 31, 14]               0
+    BayesianConv2d-7           [-1, 10, 30, 14]           2,000
+           Sigmoid-8           [-1, 10, 30, 14]               0
+    BayesianConv2d-9            [-1, 1, 30, 14]              60
+         Softplus-10            [-1, 1, 30, 14]               0
+          Flatten-11                  [-1, 420]               0
+   BayesianLinear-12                  [-1, 100]          84,000
+         Softplus-13                  [-1, 100]               0
+   BayesianLinear-14                    [-1, 1]             200
+         Softplus-15                    [-1, 1]               0
+================================================================
+Total params: 90,460
+Trainable params: 90,460
+Non-trainable params: 0
+________________________________________________________________
+**** EPOCH 000 ****
+---- EPOCH 000 TRAINING ----
+2019-09-27 14:13:32.250771
+learning rate: 0.001
+train mean loss: 3265.21
+epoch train time: 0:00:02.082296
+elapsed time: 0:00:02.107577
+**** EPOCH 001 ****
+---- EPOCH 001 TRAINING ----
+2019-09-27 14:13:34.342134
+learning rate: 0.001
+train mean loss: 2249.39
+epoch train time: 0:00:00.852843
+elapsed time: 0:00:02.960997
+**** EPOCH 002 ****
+---- EPOCH 002 TRAINING ----
+2019-09-27 14:13:35.195658
+learning rate: 0.001
+train mean loss: 1663.64
+epoch train time: 0:00:00.841619
+elapsed time: 0:00:03.803376
+**** EPOCH 003 ****
+---- EPOCH 003 TRAINING ----
+2019-09-27 14:13:36.038028
+learning rate: 0.001
+train mean loss: 1612.06
+epoch train time: 0:00:00.842087
+elapsed time: 0:00:04.646144
+**** EPOCH 004 ****
+---- EPOCH 004 TRAINING ----
+2019-09-27 14:13:36.880817
+learning rate: 0.001
+train mean loss: 1400.56
+epoch train time: 0:00:00.842479
+elapsed time: 0:00:05.489314
+**** EPOCH 005 ****
+---- EPOCH 005 TRAINING ----
+2019-09-27 14:13:37.723956
+learning rate: 0.001
+train mean loss: 1364.02
+epoch train time: 0:00:00.839616
+elapsed time: 0:00:06.329566
+**** EPOCH 006 ****
+---- EPOCH 006 TRAINING ----
+2019-09-27 14:13:38.564208
+learning rate: 0.001
+train mean loss: 1284.63
+epoch train time: 0:00:00.839053
+elapsed time: 0:00:07.170472
+**** EPOCH 007 ****
+---- EPOCH 007 TRAINING ----
+2019-09-27 14:13:39.405148
+learning rate: 0.001
+train mean loss: 1246.10
+epoch train time: 0:00:00.839950
+elapsed time: 0:00:08.011134
+**** EPOCH 008 ****
+---- EPOCH 008 TRAINING ----
+2019-09-27 14:13:40.245869
+learning rate: 0.001
+train mean loss: 1233.35
+epoch train time: 0:00:00.824151
+elapsed time: 0:00:08.836050
+**** EPOCH 009 ****
+---- EPOCH 009 TRAINING ----
+2019-09-27 14:13:41.070695
+learning rate: 0.001
+train mean loss: 1227.70
+epoch train time: 0:00:00.824265
+elapsed time: 0:00:09.661027
+**** EPOCH 010 ****
+---- EPOCH 010 TRAINING ----
+2019-09-27 14:13:41.895674
+learning rate: 0.001
+train mean loss: 1227.65
+epoch train time: 0:00:00.818276
+elapsed time: 0:00:10.479934
+**** EPOCH 011 ****
+---- EPOCH 011 TRAINING ----
+2019-09-27 14:13:42.714621
+learning rate: 0.001
+train mean loss: 1223.95
+epoch train time: 0:00:00.818073
+elapsed time: 0:00:11.298713
+**** EPOCH 012 ****
+---- EPOCH 012 TRAINING ----
+2019-09-27 14:13:43.533346
+learning rate: 0.001
+train mean loss: 1152.22
+epoch train time: 0:00:00.824683
+elapsed time: 0:00:12.124072
+**** EPOCH 013 ****
+---- EPOCH 013 TRAINING ----
+2019-09-27 14:13:44.358907
+learning rate: 0.001
+train mean loss: 1157.02
+epoch train time: 0:00:00.824108
+elapsed time: 0:00:12.949035
+**** EPOCH 014 ****
+---- EPOCH 014 TRAINING ----
+2019-09-27 14:13:45.183683
+learning rate: 0.001
+train mean loss: 1165.38
+epoch train time: 0:00:00.826718
+elapsed time: 0:00:13.776452
+**** EPOCH 015 ****
+---- EPOCH 015 TRAINING ----
+2019-09-27 14:13:46.011104
+learning rate: 0.001
+train mean loss: 1091.45
+epoch train time: 0:00:00.826169
+elapsed time: 0:00:14.603307
+**** EPOCH 016 ****
+---- EPOCH 016 TRAINING ----
+2019-09-27 14:13:46.837964
+learning rate: 0.001
+train mean loss: 1122.00
+epoch train time: 0:00:00.824751
+elapsed time: 0:00:15.428756
+**** EPOCH 017 ****
+---- EPOCH 017 TRAINING ----
+2019-09-27 14:13:47.663401
+learning rate: 0.001
+train mean loss: 1121.53
+epoch train time: 0:00:00.820547
+elapsed time: 0:00:16.249880
+**** EPOCH 018 ****
+---- EPOCH 018 TRAINING ----
+2019-09-27 14:13:48.484538
+learning rate: 0.001
+train mean loss: 1103.13
+epoch train time: 0:00:00.785014
+elapsed time: 0:00:17.035559
+**** EPOCH 019 ****
+---- EPOCH 019 TRAINING ----
+2019-09-27 14:13:49.270211
+learning rate: 0.001
+train mean loss: 1103.77
+epoch train time: 0:00:00.782048
+elapsed time: 0:00:17.819439
+**** EPOCH 020 ****
+---- EPOCH 020 TRAINING ----
+2019-09-27 14:13:50.054111
+learning rate: 0.001
+train mean loss: 1119.32
+epoch train time: 0:00:00.780690
+elapsed time: 0:00:18.600882
+**** EPOCH 021 ****
+---- EPOCH 021 TRAINING ----
+2019-09-27 14:13:50.835526
+learning rate: 0.001
+train mean loss: 1094.18
+epoch train time: 0:00:00.775703
+elapsed time: 0:00:19.377197
+**** EPOCH 022 ****
+---- EPOCH 022 TRAINING ----
+2019-09-27 14:13:51.611861
+learning rate: 0.001
+train mean loss: 1109.78
+epoch train time: 0:00:00.779655
+elapsed time: 0:00:20.157481
+**** EPOCH 023 ****
+---- EPOCH 023 TRAINING ----
+2019-09-27 14:13:52.392180
+learning rate: 0.001
+train mean loss: 1067.78
+epoch train time: 0:00:00.773774
+elapsed time: 0:00:20.932092
+**** EPOCH 024 ****
+---- EPOCH 024 TRAINING ----
+2019-09-27 14:13:53.166739
+learning rate: 0.001
+train mean loss: 1059.31
+epoch train time: 0:00:00.772223
+elapsed time: 0:00:21.705092
+**** EPOCH 025 ****
+---- EPOCH 025 TRAINING ----
+2019-09-27 14:13:53.939795
+learning rate: 0.001
+train mean loss: 1112.00
+epoch train time: 0:00:00.770030
+elapsed time: 0:00:22.475856
+**** EPOCH 026 ****
+---- EPOCH 026 TRAINING ----
+2019-09-27 14:13:54.710518
+learning rate: 0.001
+train mean loss: 1069.82
+epoch train time: 0:00:00.772412
+elapsed time: 0:00:23.249091
+**** EPOCH 027 ****
+---- EPOCH 027 TRAINING ----
+2019-09-27 14:13:55.483698
+learning rate: 0.001
+train mean loss: 1036.16
+epoch train time: 0:00:00.779257
+elapsed time: 0:00:24.029011
+**** EPOCH 028 ****
+---- EPOCH 028 TRAINING ----
+2019-09-27 14:13:56.263656
+learning rate: 0.001
+train mean loss: 1074.35
+epoch train time: 0:00:00.775547
+elapsed time: 0:00:24.805220
+**** EPOCH 029 ****
+---- EPOCH 029 TRAINING ----
+2019-09-27 14:13:57.039873
+learning rate: 0.001
+train mean loss: 1048.09
+epoch train time: 0:00:00.772387
+elapsed time: 0:00:25.578355
+**** EPOCH 030 ****
+---- EPOCH 030 TRAINING ----
+2019-09-27 14:13:57.813007
+learning rate: 0.001
+train mean loss: 1067.90
+epoch train time: 0:00:00.769154
+elapsed time: 0:00:26.348115
+**** EPOCH 031 ****
+---- EPOCH 031 TRAINING ----
+2019-09-27 14:13:58.582766
+learning rate: 0.001
+train mean loss: 1083.79
+epoch train time: 0:00:00.777468
+elapsed time: 0:00:27.126441
+**** EPOCH 032 ****
+---- EPOCH 032 TRAINING ----
+2019-09-27 14:13:59.361100
+learning rate: 0.001
+train mean loss: 1039.66
+epoch train time: 0:00:00.767635
+elapsed time: 0:00:27.894754
+**** EPOCH 033 ****
+---- EPOCH 033 TRAINING ----
+2019-09-27 14:14:00.129389
+learning rate: 0.001
+train mean loss: 1042.32
+epoch train time: 0:00:00.772103
+elapsed time: 0:00:28.668435
+**** EPOCH 034 ****
+---- EPOCH 034 TRAINING ----
+2019-09-27 14:14:00.903188
+learning rate: 0.001
+train mean loss: 1035.02
+epoch train time: 0:00:00.774446
+elapsed time: 0:00:29.443731
+**** EPOCH 035 ****
+---- EPOCH 035 TRAINING ----
+2019-09-27 14:14:01.678388
+learning rate: 0.001
+train mean loss: 1006.88
+epoch train time: 0:00:00.770007
+elapsed time: 0:00:30.214395
+**** EPOCH 036 ****
+---- EPOCH 036 TRAINING ----
+2019-09-27 14:14:02.449057
+learning rate: 0.001
+train mean loss: 1026.72
+epoch train time: 0:00:00.771279
+elapsed time: 0:00:30.986376
+**** EPOCH 037 ****
+---- EPOCH 037 TRAINING ----
+2019-09-27 14:14:03.221033
+learning rate: 0.001
+train mean loss: 1025.01
+epoch train time: 0:00:00.780931
+elapsed time: 0:00:31.767976
+**** EPOCH 038 ****
+---- EPOCH 038 TRAINING ----
+2019-09-27 14:14:04.002658
+learning rate: 0.001
+train mean loss: 1014.71
+epoch train time: 0:00:00.772324
+elapsed time: 0:00:32.541015
+**** EPOCH 039 ****
+---- EPOCH 039 TRAINING ----
+2019-09-27 14:14:04.775675
+learning rate: 0.001
+train mean loss: 956.04
+epoch train time: 0:00:00.772628
+elapsed time: 0:00:33.314307
+**** EPOCH 040 ****
+---- EPOCH 040 TRAINING ----
+2019-09-27 14:14:05.548959
+learning rate: 0.001
+train mean loss: 976.59
+epoch train time: 0:00:00.772212
+elapsed time: 0:00:34.088173
+**** EPOCH 041 ****
+---- EPOCH 041 TRAINING ----
+2019-09-27 14:14:06.322857
+learning rate: 0.001
+train mean loss: 966.16
+epoch train time: 0:00:00.766672
+elapsed time: 0:00:34.855513
+**** EPOCH 042 ****
+---- EPOCH 042 TRAINING ----
+2019-09-27 14:14:07.090157
+learning rate: 0.001
+train mean loss: 903.13
+epoch train time: 0:00:00.773165
+elapsed time: 0:00:35.629405
+**** EPOCH 043 ****
+---- EPOCH 043 TRAINING ----
+2019-09-27 14:14:07.864051
+learning rate: 0.001
+train mean loss: 879.44
+epoch train time: 0:00:00.772435
+elapsed time: 0:00:36.402539
+**** EPOCH 044 ****
+---- EPOCH 044 TRAINING ----
+2019-09-27 14:14:08.637173
+learning rate: 0.001
+train mean loss: 864.55
+epoch train time: 0:00:00.771242
+elapsed time: 0:00:37.174652
+**** EPOCH 045 ****
+---- EPOCH 045 TRAINING ----
+2019-09-27 14:14:09.409315
+learning rate: 0.001
+train mean loss: 823.32
+epoch train time: 0:00:00.773120
+elapsed time: 0:00:37.948438
+**** EPOCH 046 ****
+---- EPOCH 046 TRAINING ----
+2019-09-27 14:14:10.183094
+learning rate: 0.001
+train mean loss: 792.12
+epoch train time: 0:00:00.766947
+elapsed time: 0:00:38.716030
+**** EPOCH 047 ****
+---- EPOCH 047 TRAINING ----
+2019-09-27 14:14:10.950676
+learning rate: 0.001
+train mean loss: 757.59
+epoch train time: 0:00:00.767527
+elapsed time: 0:00:39.484233
+**** EPOCH 048 ****
+---- EPOCH 048 TRAINING ----
+2019-09-27 14:14:11.718897
+learning rate: 0.001
+train mean loss: 748.02
+epoch train time: 0:00:00.770140
+elapsed time: 0:00:40.255106
+**** EPOCH 049 ****
+---- EPOCH 049 TRAINING ----
+2019-09-27 14:14:12.489790
+learning rate: 0.001
+train mean loss: 720.87
+epoch train time: 0:00:00.764923
+elapsed time: 0:00:41.020759
+**** EPOCH 050 ****
+---- EPOCH 050 TRAINING ----
+2019-09-27 14:14:13.255421
+learning rate: 0.001
+train mean loss: 711.06
+epoch train time: 0:00:00.769652
+elapsed time: 0:00:41.791060
+**** EPOCH 051 ****
+---- EPOCH 051 TRAINING ----
+2019-09-27 14:14:14.025718
+learning rate: 0.001
+train mean loss: 656.13
+epoch train time: 0:00:00.766584
+elapsed time: 0:00:42.558263
+**** EPOCH 052 ****
+---- EPOCH 052 TRAINING ----
+2019-09-27 14:14:14.792924
+learning rate: 0.001
+train mean loss: 645.48
+epoch train time: 0:00:00.765441
+elapsed time: 0:00:43.324324
+**** EPOCH 053 ****
+---- EPOCH 053 TRAINING ----
+2019-09-27 14:14:15.558964
+learning rate: 0.001
+train mean loss: 614.87
+epoch train time: 0:00:00.766116
+elapsed time: 0:00:44.091137
+**** EPOCH 054 ****
+---- EPOCH 054 TRAINING ----
+2019-09-27 14:14:16.325801
+learning rate: 0.001
+train mean loss: 613.73
+epoch train time: 0:00:00.767128
+elapsed time: 0:00:44.859856
+**** EPOCH 055 ****
+---- EPOCH 055 TRAINING ----
+2019-09-27 14:14:17.094552
+learning rate: 0.001
+train mean loss: 580.77
+epoch train time: 0:00:00.769730
+elapsed time: 0:00:45.630308
+**** EPOCH 056 ****
+---- EPOCH 056 TRAINING ----
+2019-09-27 14:14:17.865011
+learning rate: 0.001
+train mean loss: 574.83
+epoch train time: 0:00:00.769711
+elapsed time: 0:00:46.400713
+**** EPOCH 057 ****
+---- EPOCH 057 TRAINING ----
+2019-09-27 14:14:18.635406
+learning rate: 0.001
+train mean loss: 517.07
+epoch train time: 0:00:00.771700
+elapsed time: 0:00:47.173135
+**** EPOCH 058 ****
+---- EPOCH 058 TRAINING ----
+2019-09-27 14:14:19.407792
+learning rate: 0.001
+train mean loss: 545.74
+epoch train time: 0:00:00.767732
+elapsed time: 0:00:47.941517
+**** EPOCH 059 ****
+---- EPOCH 059 TRAINING ----
+2019-09-27 14:14:20.176156
+learning rate: 0.001
+train mean loss: 525.57
+epoch train time: 0:00:00.764245
+elapsed time: 0:00:48.706359
+**** EPOCH 060 ****
+---- EPOCH 060 TRAINING ----
+2019-09-27 14:14:20.941007
+learning rate: 0.001
+train mean loss: 505.10
+epoch train time: 0:00:00.786082
+elapsed time: 0:00:49.493086
+**** EPOCH 061 ****
+---- EPOCH 061 TRAINING ----
+2019-09-27 14:14:21.727725
+learning rate: 0.001
+train mean loss: 507.80
+epoch train time: 0:00:00.805297
+elapsed time: 0:00:50.299951
+**** EPOCH 062 ****
+---- EPOCH 062 TRAINING ----
+2019-09-27 14:14:22.534622
+learning rate: 0.001
+train mean loss: 480.79
+epoch train time: 0:00:00.795912
+elapsed time: 0:00:51.096670
+**** EPOCH 063 ****
+---- EPOCH 063 TRAINING ----
+2019-09-27 14:14:23.331317
+learning rate: 0.001
+train mean loss: 485.94
+epoch train time: 0:00:00.783467
+elapsed time: 0:00:51.880836
+**** EPOCH 064 ****
+---- EPOCH 064 TRAINING ----
+2019-09-27 14:14:24.115485
+learning rate: 0.001
+train mean loss: 469.71
+epoch train time: 0:00:00.782591
+elapsed time: 0:00:52.664237
+**** EPOCH 065 ****
+---- EPOCH 065 TRAINING ----
+2019-09-27 14:14:24.898879
+learning rate: 0.001
+train mean loss: 487.72
+epoch train time: 0:00:00.789173
+elapsed time: 0:00:53.454051
+**** EPOCH 066 ****
+---- EPOCH 066 TRAINING ----
+2019-09-27 14:14:25.688713
+learning rate: 0.001
+train mean loss: 457.49
+epoch train time: 0:00:00.777812
+elapsed time: 0:00:54.232537
+**** EPOCH 067 ****
+---- EPOCH 067 TRAINING ----
+2019-09-27 14:14:26.467189
+learning rate: 0.001
+train mean loss: 462.77
+epoch train time: 0:00:00.773323
+elapsed time: 0:00:55.006486
+**** EPOCH 068 ****
+---- EPOCH 068 TRAINING ----
+2019-09-27 14:14:27.241126
+learning rate: 0.001
+train mean loss: 448.32
+epoch train time: 0:00:00.770720
+elapsed time: 0:00:55.778952
+**** EPOCH 069 ****
+---- EPOCH 069 TRAINING ----
+2019-09-27 14:14:28.013718
+learning rate: 0.001
+train mean loss: 448.01
+epoch train time: 0:00:00.772958
+elapsed time: 0:00:56.552741
+**** EPOCH 070 ****
+---- EPOCH 070 TRAINING ----
+2019-09-27 14:14:28.787395
+learning rate: 0.001
+train mean loss: 451.69
+epoch train time: 0:00:00.783550
+elapsed time: 0:00:57.336980
+**** EPOCH 071 ****
+---- EPOCH 071 TRAINING ----
+2019-09-27 14:14:29.571625
+learning rate: 0.001
+train mean loss: 463.00
+epoch train time: 0:00:00.780793
+elapsed time: 0:00:58.118417
+**** EPOCH 072 ****
+---- EPOCH 072 TRAINING ----
+2019-09-27 14:14:30.353077
+learning rate: 0.001
+train mean loss: 427.51
+epoch train time: 0:00:00.771957
+elapsed time: 0:00:58.891105
+**** EPOCH 073 ****
+---- EPOCH 073 TRAINING ----
+2019-09-27 14:14:31.125757
+learning rate: 0.001
+train mean loss: 448.89
+epoch train time: 0:00:00.774864
+elapsed time: 0:00:59.666632
+**** EPOCH 074 ****
+---- EPOCH 074 TRAINING ----
+2019-09-27 14:14:31.901278
+learning rate: 0.001
+train mean loss: 442.37
+epoch train time: 0:00:00.771954
+elapsed time: 0:01:00.439299
+**** EPOCH 075 ****
+---- EPOCH 075 TRAINING ----
+2019-09-27 14:14:32.673966
+learning rate: 0.001
+train mean loss: 443.13
+epoch train time: 0:00:00.776429
+elapsed time: 0:01:01.217377
+**** EPOCH 076 ****
+---- EPOCH 076 TRAINING ----
+2019-09-27 14:14:33.452039
+learning rate: 0.001
+train mean loss: 440.57
+epoch train time: 0:00:00.782640
+elapsed time: 0:01:02.000788
+**** EPOCH 077 ****
+---- EPOCH 077 TRAINING ----
+2019-09-27 14:14:34.235485
+learning rate: 0.001
+train mean loss: 410.96
+epoch train time: 0:00:00.776705
+elapsed time: 0:01:02.778174
+**** EPOCH 078 ****
+---- EPOCH 078 TRAINING ----
+2019-09-27 14:14:35.012817
+learning rate: 0.001
+train mean loss: 438.91
+epoch train time: 0:00:00.774767
+elapsed time: 0:01:03.553663
+**** EPOCH 079 ****
+---- EPOCH 079 TRAINING ----
+2019-09-27 14:14:35.788306
+learning rate: 0.001
+train mean loss: 425.42
+epoch train time: 0:00:00.780259
+elapsed time: 0:01:04.334551
+**** EPOCH 080 ****
+---- EPOCH 080 TRAINING ----
+2019-09-27 14:14:36.569192
+learning rate: 0.001
+train mean loss: 418.79
+epoch train time: 0:00:00.778598
+elapsed time: 0:01:05.113809
+**** EPOCH 081 ****
+---- EPOCH 081 TRAINING ----
+2019-09-27 14:14:37.348499
+learning rate: 0.001
+train mean loss: 417.17
+epoch train time: 0:00:00.770637
+elapsed time: 0:01:05.885099
+**** EPOCH 082 ****
+---- EPOCH 082 TRAINING ----
+2019-09-27 14:14:38.119750
+learning rate: 0.001
+train mean loss: 442.55
+epoch train time: 0:00:00.780494
+elapsed time: 0:01:06.666270
+**** EPOCH 083 ****
+---- EPOCH 083 TRAINING ----
+2019-09-27 14:14:38.900910
+learning rate: 0.001
+train mean loss: 405.77
+epoch train time: 0:00:00.774432
+elapsed time: 0:01:07.441427
+**** EPOCH 084 ****
+---- EPOCH 084 TRAINING ----
+2019-09-27 14:14:39.676070
+learning rate: 0.001
+train mean loss: 433.74
+epoch train time: 0:00:00.775190
+elapsed time: 0:01:08.217258
+**** EPOCH 085 ****
+---- EPOCH 085 TRAINING ----
+2019-09-27 14:14:40.451900
+learning rate: 0.001
+train mean loss: 415.34
+epoch train time: 0:00:00.773661
+elapsed time: 0:01:08.991604
+**** EPOCH 086 ****
+---- EPOCH 086 TRAINING ----
+2019-09-27 14:14:41.226285
+learning rate: 0.001
+train mean loss: 431.95
+epoch train time: 0:00:00.780199
+elapsed time: 0:01:09.772479
+**** EPOCH 087 ****
+---- EPOCH 087 TRAINING ----
+2019-09-27 14:14:42.007167
+learning rate: 0.001
+train mean loss: 396.01
+epoch train time: 0:00:00.773189
+elapsed time: 0:01:10.546372
+**** EPOCH 088 ****
+---- EPOCH 088 TRAINING ----
+2019-09-27 14:14:42.781024
+learning rate: 0.001
+train mean loss: 414.80
+epoch train time: 0:00:00.767009
+elapsed time: 0:01:11.313983
+**** EPOCH 089 ****
+---- EPOCH 089 TRAINING ----
+2019-09-27 14:14:43.548615
+learning rate: 0.001
+train mean loss: 422.04
+epoch train time: 0:00:00.772013
+elapsed time: 0:01:12.087492
+**** EPOCH 090 ****
+---- EPOCH 090 TRAINING ----
+2019-09-27 14:14:44.322187
+learning rate: 0.001
+train mean loss: 423.32
+epoch train time: 0:00:00.768792
+elapsed time: 0:01:12.856952
+**** EPOCH 091 ****
+---- EPOCH 091 TRAINING ----
+2019-09-27 14:14:45.091596
+learning rate: 0.001
+train mean loss: 415.41
+epoch train time: 0:00:00.771422
+elapsed time: 0:01:13.629034
+**** EPOCH 092 ****
+---- EPOCH 092 TRAINING ----
+2019-09-27 14:14:45.863669
+learning rate: 0.001
+train mean loss: 414.36
+epoch train time: 0:00:00.769815
+elapsed time: 0:01:14.399459
+**** EPOCH 093 ****
+---- EPOCH 093 TRAINING ----
+2019-09-27 14:14:46.634140
+learning rate: 0.001
+train mean loss: 403.58
+epoch train time: 0:00:00.769626
+elapsed time: 0:01:15.169818
+**** EPOCH 094 ****
+---- EPOCH 094 TRAINING ----
+2019-09-27 14:14:47.404495
+learning rate: 0.001
+train mean loss: 406.74
+epoch train time: 0:00:00.781333
+elapsed time: 0:01:15.951825
+**** EPOCH 095 ****
+---- EPOCH 095 TRAINING ----
+2019-09-27 14:14:48.186487
+learning rate: 0.001
+train mean loss: 410.61
+epoch train time: 0:00:00.770167
+elapsed time: 0:01:16.722657
+**** EPOCH 096 ****
+---- EPOCH 096 TRAINING ----
+2019-09-27 14:14:48.957307
+learning rate: 0.001
+train mean loss: 394.89
+epoch train time: 0:00:00.772131
+elapsed time: 0:01:17.495504
+**** EPOCH 097 ****
+---- EPOCH 097 TRAINING ----
+2019-09-27 14:14:49.730151
+learning rate: 0.001
+train mean loss: 403.79
+epoch train time: 0:00:00.769313
+elapsed time: 0:01:18.265496
+**** EPOCH 098 ****
+---- EPOCH 098 TRAINING ----
+2019-09-27 14:14:50.500141
+learning rate: 0.001
+train mean loss: 404.81
+epoch train time: 0:00:00.774927
+elapsed time: 0:01:19.041049
+**** EPOCH 099 ****
+---- EPOCH 099 TRAINING ----
+2019-09-27 14:14:51.275692
+learning rate: 0.001
+train mean loss: 414.84
+epoch train time: 0:00:00.767729
+elapsed time: 0:01:19.809437
+**** EPOCH 100 ****
+---- EPOCH 100 TRAINING ----
+2019-09-27 14:14:52.044080
+learning rate: 0.001
+train mean loss: 409.58
+epoch train time: 0:00:00.767613
+elapsed time: 0:01:20.577736
+**** EPOCH 101 ****
+---- EPOCH 101 TRAINING ----
+2019-09-27 14:14:52.812390
+learning rate: 0.001
+train mean loss: 394.64
+epoch train time: 0:00:00.770547
+elapsed time: 0:01:21.348975
+**** EPOCH 102 ****
+---- EPOCH 102 TRAINING ----
+2019-09-27 14:14:53.583622
+learning rate: 0.001
+train mean loss: 387.57
+epoch train time: 0:00:00.769476
+elapsed time: 0:01:22.119072
+**** EPOCH 103 ****
+---- EPOCH 103 TRAINING ----
+2019-09-27 14:14:54.353768
+learning rate: 0.001
+train mean loss: 392.74
+epoch train time: 0:00:00.769127
+elapsed time: 0:01:22.889703
+**** EPOCH 104 ****
+---- EPOCH 104 TRAINING ----
+2019-09-27 14:14:55.124353
+learning rate: 0.001
+train mean loss: 398.90
+epoch train time: 0:00:00.774865
+elapsed time: 0:01:23.665243
+**** EPOCH 105 ****
+---- EPOCH 105 TRAINING ----
+2019-09-27 14:14:55.899882
+learning rate: 0.001
+train mean loss: 394.05
+epoch train time: 0:00:00.771404
+elapsed time: 0:01:24.437305
+**** EPOCH 106 ****
+---- EPOCH 106 TRAINING ----
+2019-09-27 14:14:56.671970
+learning rate: 0.001
+train mean loss: 406.40
+epoch train time: 0:00:00.773995
+elapsed time: 0:01:25.212023
+**** EPOCH 107 ****
+---- EPOCH 107 TRAINING ----
+2019-09-27 14:14:57.446695
+learning rate: 0.001
+train mean loss: 406.71
+epoch train time: 0:00:00.775082
+elapsed time: 0:01:25.987844
+**** EPOCH 108 ****
+---- EPOCH 108 TRAINING ----
+2019-09-27 14:14:58.222488
+learning rate: 0.001
+train mean loss: 394.43
+epoch train time: 0:00:00.769550
+elapsed time: 0:01:26.758091
+**** EPOCH 109 ****
+---- EPOCH 109 TRAINING ----
+2019-09-27 14:14:58.992827
+learning rate: 0.001
+train mean loss: 400.71
+epoch train time: 0:00:00.772188
+elapsed time: 0:01:27.531131
+**** EPOCH 110 ****
+---- EPOCH 110 TRAINING ----
+2019-09-27 14:14:59.765797
+learning rate: 0.001
+train mean loss: 400.89
+epoch train time: 0:00:00.773099
+elapsed time: 0:01:28.305710
+**** EPOCH 111 ****
+---- EPOCH 111 TRAINING ----
+2019-09-27 14:15:00.540430
+learning rate: 0.001
+train mean loss: 391.38
+epoch train time: 0:00:00.769662
+elapsed time: 0:01:29.076105
+**** EPOCH 112 ****
+---- EPOCH 112 TRAINING ----
+2019-09-27 14:15:01.310764
+learning rate: 0.001
+train mean loss: 394.35
+epoch train time: 0:00:00.771037
+elapsed time: 0:01:29.847823
+**** EPOCH 113 ****
+---- EPOCH 113 TRAINING ----
+2019-09-27 14:15:02.082458
+learning rate: 0.001
+train mean loss: 375.47
+epoch train time: 0:00:00.771243
+elapsed time: 0:01:30.619912
+**** EPOCH 114 ****
+---- EPOCH 114 TRAINING ----
+2019-09-27 14:15:02.854587
+learning rate: 0.001
+train mean loss: 400.04
+epoch train time: 0:00:00.769680
+elapsed time: 0:01:31.390242
+**** EPOCH 115 ****
+---- EPOCH 115 TRAINING ----
+2019-09-27 14:15:03.624909
+learning rate: 0.001
+train mean loss: 377.47
+epoch train time: 0:00:00.776082
+elapsed time: 0:01:32.166999
+**** EPOCH 116 ****
+---- EPOCH 116 TRAINING ----
+2019-09-27 14:15:04.401659
+learning rate: 0.001
+train mean loss: 375.94
+epoch train time: 0:00:00.778031
+elapsed time: 0:01:32.945752
+**** EPOCH 117 ****
+---- EPOCH 117 TRAINING ----
+2019-09-27 14:15:05.180393
+learning rate: 0.001
+train mean loss: 386.68
+epoch train time: 0:00:00.765727
+elapsed time: 0:01:33.713307
+**** EPOCH 118 ****
+---- EPOCH 118 TRAINING ----
+2019-09-27 14:15:05.948048
+learning rate: 0.001
+train mean loss: 384.27
+epoch train time: 0:00:00.770701
+elapsed time: 0:01:34.484837
+**** EPOCH 119 ****
+---- EPOCH 119 TRAINING ----
+2019-09-27 14:15:06.719486
+learning rate: 0.001
+train mean loss: 385.97
+epoch train time: 0:00:00.775236
+elapsed time: 0:01:35.260739
+**** EPOCH 120 ****
+---- EPOCH 120 TRAINING ----
+2019-09-27 14:15:07.495382
+learning rate: 0.001
+train mean loss: 379.35
+epoch train time: 0:00:00.769020
+elapsed time: 0:01:36.030492
+**** EPOCH 121 ****
+---- EPOCH 121 TRAINING ----
+2019-09-27 14:15:08.265150
+learning rate: 0.001
+train mean loss: 404.48
+epoch train time: 0:00:00.773056
+elapsed time: 0:01:36.804223
+**** EPOCH 122 ****
+---- EPOCH 122 TRAINING ----
+2019-09-27 14:15:09.038875
+learning rate: 0.001
+train mean loss: 382.59
+epoch train time: 0:00:00.787366
+elapsed time: 0:01:37.592287
+**** EPOCH 123 ****
+---- EPOCH 123 TRAINING ----
+2019-09-27 14:15:09.826980
+learning rate: 0.001
+train mean loss: 395.32
+epoch train time: 0:00:00.794902
+elapsed time: 0:01:38.387931
+**** EPOCH 124 ****
+---- EPOCH 124 TRAINING ----
+2019-09-27 14:15:10.622629
+learning rate: 0.001
+train mean loss: 382.08
+epoch train time: 0:00:00.790767
+elapsed time: 0:01:39.180538
+**** EPOCH 125 ****
+---- EPOCH 125 TRAINING ----
+2019-09-27 14:15:11.415259
+learning rate: 0.001
+train mean loss: 384.57
+epoch train time: 0:00:00.786045
+elapsed time: 0:01:39.967460
+**** EPOCH 126 ****
+---- EPOCH 126 TRAINING ----
+2019-09-27 14:15:12.202125
+learning rate: 0.001
+train mean loss: 370.52
+epoch train time: 0:00:00.785111
+elapsed time: 0:01:40.753335
+**** EPOCH 127 ****
+---- EPOCH 127 TRAINING ----
+2019-09-27 14:15:12.987893
+learning rate: 0.001
+train mean loss: 373.12
+epoch train time: 0:00:00.780275
+elapsed time: 0:01:41.534197
+**** EPOCH 128 ****
+---- EPOCH 128 TRAINING ----
+2019-09-27 14:15:13.768861
+learning rate: 0.001
+train mean loss: 371.81
+epoch train time: 0:00:00.782411
+elapsed time: 0:01:42.317318
+**** EPOCH 129 ****
+---- EPOCH 129 TRAINING ----
+2019-09-27 14:15:14.551967
+learning rate: 0.001
+train mean loss: 361.85
+epoch train time: 0:00:00.780998
+elapsed time: 0:01:43.098972
+**** EPOCH 130 ****
+---- EPOCH 130 TRAINING ----
+2019-09-27 14:15:15.333635
+learning rate: 0.001
+train mean loss: 370.44
+epoch train time: 0:00:00.778187
+elapsed time: 0:01:43.878022
+**** EPOCH 131 ****
+---- EPOCH 131 TRAINING ----
+2019-09-27 14:15:16.112687
+learning rate: 0.001
+train mean loss: 351.45
+epoch train time: 0:00:00.779054
+elapsed time: 0:01:44.657795
+**** EPOCH 132 ****
+---- EPOCH 132 TRAINING ----
+2019-09-27 14:15:16.892432
+learning rate: 0.001
+train mean loss: 362.80
+epoch train time: 0:00:00.776506
+elapsed time: 0:01:45.434934
+**** EPOCH 133 ****
+---- EPOCH 133 TRAINING ----
+2019-09-27 14:15:17.669574
+learning rate: 0.001
+train mean loss: 368.69
+epoch train time: 0:00:00.778965
+elapsed time: 0:01:46.214515
+**** EPOCH 134 ****
+---- EPOCH 134 TRAINING ----
+2019-09-27 14:15:18.449156
+learning rate: 0.001
+train mean loss: 360.06
+epoch train time: 0:00:00.779695
+elapsed time: 0:01:46.994861
+**** EPOCH 135 ****
+---- EPOCH 135 TRAINING ----
+2019-09-27 14:15:19.229503
+learning rate: 0.001
+train mean loss: 360.02
+epoch train time: 0:00:00.779196
+elapsed time: 0:01:47.774816
+**** EPOCH 136 ****
+---- EPOCH 136 TRAINING ----
+2019-09-27 14:15:20.009464
+learning rate: 0.001
+train mean loss: 367.08
+epoch train time: 0:00:00.774852
+elapsed time: 0:01:48.550333
+**** EPOCH 137 ****
+---- EPOCH 137 TRAINING ----
+2019-09-27 14:15:20.784984
+learning rate: 0.001
+train mean loss: 367.15
+epoch train time: 0:00:00.775343
+elapsed time: 0:01:49.326388
+**** EPOCH 138 ****
+---- EPOCH 138 TRAINING ----
+2019-09-27 14:15:21.561036
+learning rate: 0.001
+train mean loss: 369.44
+epoch train time: 0:00:00.780330
+elapsed time: 0:01:50.108466
+**** EPOCH 139 ****
+---- EPOCH 139 TRAINING ----
+2019-09-27 14:15:22.343120
+learning rate: 0.001
+train mean loss: 354.73
+epoch train time: 0:00:00.773049
+elapsed time: 0:01:50.882159
+**** EPOCH 140 ****
+---- EPOCH 140 TRAINING ----
+2019-09-27 14:15:23.116821
+learning rate: 0.001
+train mean loss: 364.63
+epoch train time: 0:00:00.780917
+elapsed time: 0:01:51.663798
+**** EPOCH 141 ****
+---- EPOCH 141 TRAINING ----
+2019-09-27 14:15:23.898482
+learning rate: 0.001
+train mean loss: 355.07
+epoch train time: 0:00:00.776852
+elapsed time: 0:01:52.441345
+**** EPOCH 142 ****
+---- EPOCH 142 TRAINING ----
+2019-09-27 14:15:24.676009
+learning rate: 0.001
+train mean loss: 363.35
+epoch train time: 0:00:00.775364
+elapsed time: 0:01:53.217407
+**** EPOCH 143 ****
+---- EPOCH 143 TRAINING ----
+2019-09-27 14:15:25.452055
+learning rate: 0.001
+train mean loss: 361.32
+epoch train time: 0:00:00.775676
+elapsed time: 0:01:53.993772
+**** EPOCH 144 ****
+---- EPOCH 144 TRAINING ----
+2019-09-27 14:15:26.228424
+learning rate: 0.001
+train mean loss: 350.81
+epoch train time: 0:00:00.777867
+elapsed time: 0:01:54.772364
+**** EPOCH 145 ****
+---- EPOCH 145 TRAINING ----
+2019-09-27 14:15:27.007014
+learning rate: 0.001
+train mean loss: 367.45
+epoch train time: 0:00:00.776451
+elapsed time: 0:01:55.549498
+**** EPOCH 146 ****
+---- EPOCH 146 TRAINING ----
+2019-09-27 14:15:27.784140
+learning rate: 0.001
+train mean loss: 353.26
+epoch train time: 0:00:00.777808
+elapsed time: 0:01:56.327921
+**** EPOCH 147 ****
+---- EPOCH 147 TRAINING ----
+2019-09-27 14:15:28.562571
+learning rate: 0.001
+train mean loss: 362.03
+epoch train time: 0:00:00.783658
+elapsed time: 0:01:57.112237
+**** EPOCH 148 ****
+---- EPOCH 148 TRAINING ----
+2019-09-27 14:15:29.346904
+learning rate: 0.001
+train mean loss: 346.47
+epoch train time: 0:00:00.775796
+elapsed time: 0:01:57.888767
+**** EPOCH 149 ****
+---- EPOCH 149 TRAINING ----
+2019-09-27 14:15:30.123338
+learning rate: 0.001
+train mean loss: 355.84
+epoch train time: 0:00:00.773443
+elapsed time: 0:01:58.662828
+**** EPOCH 150 ****
+---- EPOCH 150 TRAINING ----
+2019-09-27 14:15:30.897475
+learning rate: 0.001
+train mean loss: 363.61
+epoch train time: 0:00:00.777295
+elapsed time: 0:01:59.440890
+**** EPOCH 151 ****
+---- EPOCH 151 TRAINING ----
+2019-09-27 14:15:31.675609
+learning rate: 0.001
+train mean loss: 362.97
+epoch train time: 0:00:00.772898
+elapsed time: 0:02:00.214570
+**** EPOCH 152 ****
+---- EPOCH 152 TRAINING ----
+2019-09-27 14:15:32.449219
+learning rate: 0.001
+train mean loss: 366.60
+epoch train time: 0:00:00.779849
+elapsed time: 0:02:00.995067
+**** EPOCH 153 ****
+---- EPOCH 153 TRAINING ----
+2019-09-27 14:15:33.229810
+learning rate: 0.001
+train mean loss: 340.13
+epoch train time: 0:00:00.785530
+elapsed time: 0:02:01.781415
+**** EPOCH 154 ****
+---- EPOCH 154 TRAINING ----
+2019-09-27 14:15:34.016072
+learning rate: 0.001
+train mean loss: 346.38
+epoch train time: 0:00:00.778066
+elapsed time: 0:02:02.560164
+**** EPOCH 155 ****
+---- EPOCH 155 TRAINING ----
+2019-09-27 14:15:34.794838
+learning rate: 0.001
+train mean loss: 355.02
+epoch train time: 0:00:00.775031
+elapsed time: 0:02:03.335864
+**** EPOCH 156 ****
+---- EPOCH 156 TRAINING ----
+2019-09-27 14:15:35.570513
+learning rate: 0.001
+train mean loss: 361.09
+epoch train time: 0:00:00.775501
+elapsed time: 0:02:04.111997
+**** EPOCH 157 ****
+---- EPOCH 157 TRAINING ----
+2019-09-27 14:15:36.346639
+learning rate: 0.001
+train mean loss: 335.54
+epoch train time: 0:00:00.779941
+elapsed time: 0:02:04.892601
+**** EPOCH 158 ****
+---- EPOCH 158 TRAINING ----
+2019-09-27 14:15:37.127257
+learning rate: 0.001
+train mean loss: 347.72
+epoch train time: 0:00:00.774906
+elapsed time: 0:02:05.668201
+**** EPOCH 159 ****
+---- EPOCH 159 TRAINING ----
+2019-09-27 14:15:37.902868
+learning rate: 0.001
+train mean loss: 358.49
+epoch train time: 0:00:00.774389
+elapsed time: 0:02:06.444076
+**** EPOCH 160 ****
+---- EPOCH 160 TRAINING ----
+2019-09-27 14:15:38.678782
+learning rate: 0.001
+train mean loss: 349.12
+epoch train time: 0:00:00.777231
+elapsed time: 0:02:07.222035
+**** EPOCH 161 ****
+---- EPOCH 161 TRAINING ----
+2019-09-27 14:15:39.456683
+learning rate: 0.001
+train mean loss: 355.29
+epoch train time: 0:00:00.777947
+elapsed time: 0:02:08.000692
+**** EPOCH 162 ****
+---- EPOCH 162 TRAINING ----
+2019-09-27 14:15:40.235340
+learning rate: 0.001
+train mean loss: 348.82
+epoch train time: 0:00:00.781730
+elapsed time: 0:02:08.783187
+**** EPOCH 163 ****
+---- EPOCH 163 TRAINING ----
+2019-09-27 14:15:41.017856
+learning rate: 0.001
+train mean loss: 347.48
+epoch train time: 0:00:00.778746
+elapsed time: 0:02:09.562653
+**** EPOCH 164 ****
+---- EPOCH 164 TRAINING ----
+2019-09-27 14:15:41.797308
+learning rate: 0.001
+train mean loss: 351.76
+epoch train time: 0:00:00.783712
+elapsed time: 0:02:10.347196
+**** EPOCH 165 ****
+---- EPOCH 165 TRAINING ----
+2019-09-27 14:15:42.581864
+learning rate: 0.001
+train mean loss: 351.86
+epoch train time: 0:00:00.778052
+elapsed time: 0:02:11.125908
+**** EPOCH 166 ****
+---- EPOCH 166 TRAINING ----
+2019-09-27 14:15:43.360567
+learning rate: 0.001
+train mean loss: 341.17
+epoch train time: 0:00:00.780155
+elapsed time: 0:02:11.907832
+**** EPOCH 167 ****
+---- EPOCH 167 TRAINING ----
+2019-09-27 14:15:44.142523
+learning rate: 0.001
+train mean loss: 333.12
+epoch train time: 0:00:00.773091
+elapsed time: 0:02:12.681706
+**** EPOCH 168 ****
+---- EPOCH 168 TRAINING ----
+2019-09-27 14:15:44.916390
+learning rate: 0.001
+train mean loss: 330.69
+epoch train time: 0:00:00.776207
+elapsed time: 0:02:13.458639
+**** EPOCH 169 ****
+---- EPOCH 169 TRAINING ----
+2019-09-27 14:15:45.693295
+learning rate: 0.001
+train mean loss: 340.40
+epoch train time: 0:00:00.779338
+elapsed time: 0:02:14.238595
+**** EPOCH 170 ****
+---- EPOCH 170 TRAINING ----
+2019-09-27 14:15:46.473244
+learning rate: 0.001
+train mean loss: 336.02
+epoch train time: 0:00:00.776246
+elapsed time: 0:02:15.015527
+**** EPOCH 171 ****
+---- EPOCH 171 TRAINING ----
+2019-09-27 14:15:47.250184
+learning rate: 0.001
+train mean loss: 341.44
+epoch train time: 0:00:00.785437
+elapsed time: 0:02:15.801675
+**** EPOCH 172 ****
+---- EPOCH 172 TRAINING ----
+2019-09-27 14:15:48.036315
+learning rate: 0.001
+train mean loss: 347.69
+epoch train time: 0:00:00.776989
+elapsed time: 0:02:16.579320
+**** EPOCH 173 ****
+---- EPOCH 173 TRAINING ----
+2019-09-27 14:15:48.813986
+learning rate: 0.001
+train mean loss: 338.69
+epoch train time: 0:00:00.774432
+elapsed time: 0:02:17.355620
+**** EPOCH 174 ****
+---- EPOCH 174 TRAINING ----
+2019-09-27 14:15:49.590193
+learning rate: 0.001
+train mean loss: 329.45
+epoch train time: 0:00:00.777587
+elapsed time: 0:02:18.133915
+**** EPOCH 175 ****
+---- EPOCH 175 TRAINING ----
+2019-09-27 14:15:50.368636
+learning rate: 0.001
+train mean loss: 336.00
+epoch train time: 0:00:00.779640
+elapsed time: 0:02:18.914276
+**** EPOCH 176 ****
+---- EPOCH 176 TRAINING ----
+2019-09-27 14:15:51.148921
+learning rate: 0.001
+train mean loss: 330.05
+epoch train time: 0:00:00.781514
+elapsed time: 0:02:19.696500
+**** EPOCH 177 ****
+---- EPOCH 177 TRAINING ----
+2019-09-27 14:15:51.931224
+learning rate: 0.001
+train mean loss: 336.85
+epoch train time: 0:00:00.775371
+elapsed time: 0:02:20.472681
+**** EPOCH 178 ****
+---- EPOCH 178 TRAINING ----
+2019-09-27 14:15:52.707362
+learning rate: 0.001
+train mean loss: 347.61
+epoch train time: 0:00:00.775058
+elapsed time: 0:02:21.248377
+**** EPOCH 179 ****
+---- EPOCH 179 TRAINING ----
+2019-09-27 14:15:53.483009
+learning rate: 0.001
+train mean loss: 347.20
+epoch train time: 0:00:00.775396
+elapsed time: 0:02:22.024396
+**** EPOCH 180 ****
+---- EPOCH 180 TRAINING ----
+2019-09-27 14:15:54.259050
+learning rate: 0.001
+train mean loss: 334.02
+epoch train time: 0:00:00.775658
+elapsed time: 0:02:22.801620
+**** EPOCH 181 ****
+---- EPOCH 181 TRAINING ----
+2019-09-27 14:15:55.036301
+learning rate: 0.001
+train mean loss: 336.01
+epoch train time: 0:00:00.778311
+elapsed time: 0:02:23.580737
+**** EPOCH 182 ****
+---- EPOCH 182 TRAINING ----
+2019-09-27 14:15:55.815376
+learning rate: 0.001
+train mean loss: 326.07
+epoch train time: 0:00:00.771343
+elapsed time: 0:02:24.352777
+**** EPOCH 183 ****
+---- EPOCH 183 TRAINING ----
+2019-09-27 14:15:56.587474
+learning rate: 0.001
+train mean loss: 339.13
+epoch train time: 0:00:00.779210
+elapsed time: 0:02:25.132706
+**** EPOCH 184 ****
+---- EPOCH 184 TRAINING ----
+2019-09-27 14:15:57.367338
+learning rate: 0.001
+train mean loss: 328.06
+epoch train time: 0:00:00.778869
+elapsed time: 0:02:25.912217
+**** EPOCH 185 ****
+---- EPOCH 185 TRAINING ----
+2019-09-27 14:15:58.146876
+learning rate: 0.001
+train mean loss: 325.93
+epoch train time: 0:00:00.778142
+elapsed time: 0:02:26.691048
+**** EPOCH 186 ****
+---- EPOCH 186 TRAINING ----
+2019-09-27 14:15:58.925698
+learning rate: 0.001
+train mean loss: 329.45
+epoch train time: 0:00:00.779426
+elapsed time: 0:02:27.471205
+**** EPOCH 187 ****
+---- EPOCH 187 TRAINING ----
+2019-09-27 14:15:59.705864
+learning rate: 0.001
+train mean loss: 322.63
+epoch train time: 0:00:00.779133
+elapsed time: 0:02:28.251953
+**** EPOCH 188 ****
+---- EPOCH 188 TRAINING ----
+2019-09-27 14:16:00.486624
+learning rate: 0.001
+train mean loss: 324.12
+epoch train time: 0:00:00.777763
+elapsed time: 0:02:29.030478
+**** EPOCH 189 ****
+---- EPOCH 189 TRAINING ----
+2019-09-27 14:16:01.265121
+learning rate: 0.001
+train mean loss: 325.68
+epoch train time: 0:00:00.781635
+elapsed time: 0:02:29.812767
+**** EPOCH 190 ****
+---- EPOCH 190 TRAINING ----
+2019-09-27 14:16:02.047419
+learning rate: 0.001
+train mean loss: 326.73
+epoch train time: 0:00:00.778424
+elapsed time: 0:02:30.592048
+**** EPOCH 191 ****
+---- EPOCH 191 TRAINING ----
+2019-09-27 14:16:02.826712
+learning rate: 0.001
+train mean loss: 333.00
+epoch train time: 0:00:00.776715
+elapsed time: 0:02:31.369379
+**** EPOCH 192 ****
+---- EPOCH 192 TRAINING ----
+2019-09-27 14:16:03.604055
+learning rate: 0.001
+train mean loss: 318.75
+epoch train time: 0:00:00.776142
+elapsed time: 0:02:32.146252
+**** EPOCH 193 ****
+---- EPOCH 193 TRAINING ----
+2019-09-27 14:16:04.380894
+learning rate: 0.001
+train mean loss: 309.23
+epoch train time: 0:00:00.774672
+elapsed time: 0:02:32.921642
+**** EPOCH 194 ****
+---- EPOCH 194 TRAINING ----
+2019-09-27 14:16:05.156293
+learning rate: 0.001
+train mean loss: 326.42
+epoch train time: 0:00:00.782242
+elapsed time: 0:02:33.705604
+**** EPOCH 195 ****
+---- EPOCH 195 TRAINING ----
+2019-09-27 14:16:05.940273
+learning rate: 0.001
+train mean loss: 324.04
+epoch train time: 0:00:00.778870
+elapsed time: 0:02:34.485129
+**** EPOCH 196 ****
+---- EPOCH 196 TRAINING ----
+2019-09-27 14:16:06.719811
+learning rate: 0.001
+train mean loss: 333.49
+epoch train time: 0:00:00.778470
+elapsed time: 0:02:35.264396
+**** EPOCH 197 ****
+---- EPOCH 197 TRAINING ----
+2019-09-27 14:16:07.499037
+learning rate: 0.001
+train mean loss: 320.43
+epoch train time: 0:00:00.775422
+elapsed time: 0:02:36.040525
+**** EPOCH 198 ****
+---- EPOCH 198 TRAINING ----
+2019-09-27 14:16:08.275217
+learning rate: 0.001
+train mean loss: 322.52
+epoch train time: 0:00:00.775139
+elapsed time: 0:02:36.816407
+**** EPOCH 199 ****
+---- EPOCH 199 TRAINING ----
+2019-09-27 14:16:09.051078
+learning rate: 0.001
+train mean loss: 316.83
+epoch train time: 0:00:00.777137
+elapsed time: 0:02:37.594232
+**** EPOCH 200 ****
+---- EPOCH 200 TRAINING ----
+2019-09-27 14:16:09.828894
+learning rate: 0.001
+train mean loss: 324.11
+epoch train time: 0:00:00.776873
+elapsed time: 0:02:38.371737
+**** EPOCH 201 ****
+---- EPOCH 201 TRAINING ----
+2019-09-27 14:16:10.606403
+learning rate: 0.0001
+train mean loss: 323.77
+epoch train time: 0:00:00.774420
+elapsed time: 0:02:39.148052
+**** EPOCH 202 ****
+---- EPOCH 202 TRAINING ----
+2019-09-27 14:16:11.382651
+learning rate: 0.0001
+train mean loss: 314.09
+epoch train time: 0:00:00.778474
+elapsed time: 0:02:39.927150
+**** EPOCH 203 ****
+---- EPOCH 203 TRAINING ----
+2019-09-27 14:16:12.161802
+learning rate: 0.0001
+train mean loss: 304.33
+epoch train time: 0:00:00.780538
+elapsed time: 0:02:40.708351
+**** EPOCH 204 ****
+---- EPOCH 204 TRAINING ----
+2019-09-27 14:16:12.943014
+learning rate: 0.0001
+train mean loss: 309.93
+epoch train time: 0:00:00.773479
+elapsed time: 0:02:41.482532
+**** EPOCH 205 ****
+---- EPOCH 205 TRAINING ----
+2019-09-27 14:16:13.717170
+learning rate: 0.0001
+train mean loss: 325.19
+epoch train time: 0:00:00.779440
+elapsed time: 0:02:42.262680
+**** EPOCH 206 ****
+---- EPOCH 206 TRAINING ----
+2019-09-27 14:16:14.497335
+learning rate: 0.0001
+train mean loss: 317.31
+epoch train time: 0:00:00.776092
+elapsed time: 0:02:43.039490
+**** EPOCH 207 ****
+---- EPOCH 207 TRAINING ----
+2019-09-27 14:16:15.274142
+learning rate: 0.0001
+train mean loss: 311.82
+epoch train time: 0:00:00.777284
+elapsed time: 0:02:43.817434
+**** EPOCH 208 ****
+---- EPOCH 208 TRAINING ----
+2019-09-27 14:16:16.052079
+learning rate: 0.0001
+train mean loss: 314.57
+epoch train time: 0:00:00.772529
+elapsed time: 0:02:44.590688
+**** EPOCH 209 ****
+---- EPOCH 209 TRAINING ----
+2019-09-27 14:16:16.825362
+learning rate: 0.0001
+train mean loss: 316.28
+epoch train time: 0:00:00.777531
+elapsed time: 0:02:45.368885
+**** EPOCH 210 ****
+---- EPOCH 210 TRAINING ----
+2019-09-27 14:16:17.603535
+learning rate: 0.0001
+train mean loss: 311.87
+epoch train time: 0:00:00.776449
+elapsed time: 0:02:46.145937
+**** EPOCH 211 ****
+---- EPOCH 211 TRAINING ----
+2019-09-27 14:16:18.380605
+learning rate: 0.0001
+train mean loss: 315.64
+epoch train time: 0:00:00.777393
+elapsed time: 0:02:46.924127
+**** EPOCH 212 ****
+---- EPOCH 212 TRAINING ----
+2019-09-27 14:16:19.158791
+learning rate: 0.0001
+train mean loss: 315.70
+epoch train time: 0:00:00.776975
+elapsed time: 0:02:47.701802
+**** EPOCH 213 ****
+---- EPOCH 213 TRAINING ----
+2019-09-27 14:16:19.936470
+learning rate: 0.0001
+train mean loss: 314.19
+epoch train time: 0:00:00.775381
+elapsed time: 0:02:48.477819
+**** EPOCH 214 ****
+---- EPOCH 214 TRAINING ----
+2019-09-27 14:16:20.712484
+learning rate: 0.0001
+train mean loss: 314.06
+epoch train time: 0:00:00.775735
+elapsed time: 0:02:49.254168
+**** EPOCH 215 ****
+---- EPOCH 215 TRAINING ----
+2019-09-27 14:16:21.488850
+learning rate: 0.0001
+train mean loss: 306.32
+epoch train time: 0:00:00.783978
+elapsed time: 0:02:50.039775
+**** EPOCH 216 ****
+---- EPOCH 216 TRAINING ----
+2019-09-27 14:16:22.274521
+learning rate: 0.0001
+train mean loss: 303.25
+epoch train time: 0:00:00.775199
+elapsed time: 0:02:50.815720
+**** EPOCH 217 ****
+---- EPOCH 217 TRAINING ----
+2019-09-27 14:16:23.050359
+learning rate: 0.0001
+train mean loss: 307.64
+epoch train time: 0:00:00.774652
+elapsed time: 0:02:51.591013
+**** EPOCH 218 ****
+---- EPOCH 218 TRAINING ----
+2019-09-27 14:16:23.825688
+learning rate: 0.0001
+train mean loss: 329.73
+epoch train time: 0:00:00.783639
+elapsed time: 0:02:52.375379
+**** EPOCH 219 ****
+---- EPOCH 219 TRAINING ----
+2019-09-27 14:16:24.610072
+learning rate: 0.0001
+train mean loss: 303.08
+epoch train time: 0:00:00.777718
+elapsed time: 0:02:53.153767
+**** EPOCH 220 ****
+---- EPOCH 220 TRAINING ----
+2019-09-27 14:16:25.388407
+learning rate: 0.0001
+train mean loss: 307.93
+epoch train time: 0:00:00.775784
+elapsed time: 0:02:53.930208
+**** EPOCH 221 ****
+---- EPOCH 221 TRAINING ----
+2019-09-27 14:16:26.164868
+learning rate: 0.0001
+train mean loss: 308.72
+epoch train time: 0:00:00.775894
+elapsed time: 0:02:54.706838
+**** EPOCH 222 ****
+---- EPOCH 222 TRAINING ----
+2019-09-27 14:16:26.941499
+learning rate: 0.0001
+train mean loss: 298.74
+epoch train time: 0:00:00.777409
+elapsed time: 0:02:55.484929
+**** EPOCH 223 ****
+---- EPOCH 223 TRAINING ----
+2019-09-27 14:16:27.719576
+learning rate: 0.0001
+train mean loss: 318.57
+epoch train time: 0:00:00.781199
+elapsed time: 0:02:56.266759
+**** EPOCH 224 ****
+---- EPOCH 224 TRAINING ----
+2019-09-27 14:16:28.501416
+learning rate: 0.0001
+train mean loss: 305.72
+epoch train time: 0:00:00.778091
+elapsed time: 0:02:57.045534
+**** EPOCH 225 ****
+---- EPOCH 225 TRAINING ----
+2019-09-27 14:16:29.280303
+learning rate: 0.0001
+train mean loss: 311.59
+epoch train time: 0:00:00.782024
+elapsed time: 0:02:57.828325
+**** EPOCH 226 ****
+---- EPOCH 226 TRAINING ----
+2019-09-27 14:16:30.062993
+learning rate: 0.0001
+train mean loss: 317.44
+epoch train time: 0:00:00.775490
+elapsed time: 0:02:58.604512
+**** EPOCH 227 ****
+---- EPOCH 227 TRAINING ----
+2019-09-27 14:16:30.839150
+learning rate: 0.0001
+train mean loss: 308.47
+epoch train time: 0:00:00.776154
+elapsed time: 0:02:59.381312
+**** EPOCH 228 ****
+---- EPOCH 228 TRAINING ----
+2019-09-27 14:16:31.615958
+learning rate: 0.0001
+train mean loss: 313.50
+epoch train time: 0:00:00.774764
+elapsed time: 0:03:00.156711
+**** EPOCH 229 ****
+---- EPOCH 229 TRAINING ----
+2019-09-27 14:16:32.391349
+learning rate: 0.0001
+train mean loss: 315.51
+epoch train time: 0:00:00.772946
+elapsed time: 0:03:00.931126
+**** EPOCH 230 ****
+---- EPOCH 230 TRAINING ----
+2019-09-27 14:16:33.165847
+learning rate: 0.0001
+train mean loss: 316.95
+epoch train time: 0:00:00.788739
+elapsed time: 0:03:01.720644
+**** EPOCH 231 ****
+---- EPOCH 231 TRAINING ----
+2019-09-27 14:16:33.955290
+learning rate: 0.0001
+train mean loss: 317.62
+epoch train time: 0:00:00.797386
+elapsed time: 0:03:02.518674
+**** EPOCH 232 ****
+---- EPOCH 232 TRAINING ----
+2019-09-27 14:16:34.753306
+learning rate: 0.0001
+train mean loss: 307.57
+epoch train time: 0:00:00.797677
+elapsed time: 0:03:03.316987
+**** EPOCH 233 ****
+---- EPOCH 233 TRAINING ----
+2019-09-27 14:16:35.551654
+learning rate: 0.0001
+train mean loss: 301.60
+epoch train time: 0:00:00.785601
+elapsed time: 0:03:04.103419
+**** EPOCH 234 ****
+---- EPOCH 234 TRAINING ----
+2019-09-27 14:16:36.337982
+learning rate: 0.0001
+train mean loss: 308.94
+epoch train time: 0:00:00.783740
+elapsed time: 0:03:04.887772
+**** EPOCH 235 ****
+---- EPOCH 235 TRAINING ----
+2019-09-27 14:16:37.122409
+learning rate: 0.0001
+train mean loss: 317.45
+epoch train time: 0:00:00.786003
+elapsed time: 0:03:05.674429
+**** EPOCH 236 ****
+---- EPOCH 236 TRAINING ----
+2019-09-27 14:16:37.909069
+learning rate: 0.0001
+train mean loss: 298.14
+epoch train time: 0:00:00.781124
+elapsed time: 0:03:06.456298
+**** EPOCH 237 ****
+---- EPOCH 237 TRAINING ----
+2019-09-27 14:16:38.690953
+learning rate: 0.0001
+train mean loss: 304.16
+epoch train time: 0:00:00.779756
+elapsed time: 0:03:07.236735
+**** EPOCH 238 ****
+---- EPOCH 238 TRAINING ----
+2019-09-27 14:16:39.471374
+learning rate: 0.0001
+train mean loss: 307.64
+epoch train time: 0:00:00.785762
+elapsed time: 0:03:08.023312
+**** EPOCH 239 ****
+---- EPOCH 239 TRAINING ----
+2019-09-27 14:16:40.257888
+learning rate: 0.0001
+train mean loss: 323.03
+epoch train time: 0:00:00.784277
+elapsed time: 0:03:08.808217
+**** EPOCH 240 ****
+---- EPOCH 240 TRAINING ----
+2019-09-27 14:16:41.042855
+learning rate: 0.0001
+train mean loss: 303.77
+epoch train time: 0:00:00.785596
+elapsed time: 0:03:09.594463
+**** EPOCH 241 ****
+---- EPOCH 241 TRAINING ----
+2019-09-27 14:16:41.829112
+learning rate: 0.0001
+train mean loss: 305.78
+epoch train time: 0:00:00.785036
+elapsed time: 0:03:10.380190
+**** EPOCH 242 ****
+---- EPOCH 242 TRAINING ----
+2019-09-27 14:16:42.614896
+learning rate: 0.0001
+train mean loss: 318.75
+epoch train time: 0:00:00.786614
+elapsed time: 0:03:11.167545
+**** EPOCH 243 ****
+---- EPOCH 243 TRAINING ----
+2019-09-27 14:16:43.402188
+learning rate: 0.0001
+train mean loss: 304.14
+epoch train time: 0:00:00.783510
+elapsed time: 0:03:11.952627
+**** EPOCH 244 ****
+---- EPOCH 244 TRAINING ----
+2019-09-27 14:16:44.187288
+learning rate: 0.0001
+train mean loss: 294.18
+epoch train time: 0:00:00.790453
+elapsed time: 0:03:12.743831
+**** EPOCH 245 ****
+---- EPOCH 245 TRAINING ----
+2019-09-27 14:16:44.978479
+learning rate: 0.0001
+train mean loss: 329.79
+epoch train time: 0:00:00.789246
+elapsed time: 0:03:13.533764
+**** EPOCH 246 ****
+---- EPOCH 246 TRAINING ----
+2019-09-27 14:16:45.768434
+learning rate: 0.0001
+train mean loss: 322.26
+epoch train time: 0:00:00.781619
+elapsed time: 0:03:14.316033
+**** EPOCH 247 ****
+---- EPOCH 247 TRAINING ----
+2019-09-27 14:16:46.550728
+learning rate: 0.0001
+train mean loss: 318.73
+epoch train time: 0:00:00.774898
+elapsed time: 0:03:15.091666
+**** EPOCH 248 ****
+---- EPOCH 248 TRAINING ----
+2019-09-27 14:16:47.326334
+learning rate: 0.0001
+train mean loss: 307.78
+epoch train time: 0:00:00.777322
+elapsed time: 0:03:15.869663
+**** EPOCH 249 ****
+---- EPOCH 249 TRAINING ----
+2019-09-27 14:16:48.104302
+learning rate: 0.0001
+train mean loss: 316.62
+epoch train time: 0:00:00.767140
+elapsed time: 0:03:16.646324
+checkpoint saved in file: log/CMAPSS/FD001/min-max/bayesian_conv5_dense1/bayesian_conv5_dense1_0.125/bayesian_conv5_dense1_0.125_3/checkpoint.pth.tar
+**** end time: 2019-09-27 14:16:48.880858 ****
