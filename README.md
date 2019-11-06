@@ -38,11 +38,11 @@ The models were tested on the four simulated turbofan engine degradation subsets
 
 Open a terminal in the root directory, activate the virtual environment and run one of the following commands:
 
-*   `sh train.sh` to train the selected model. Parameters can be modified by editing *train.sh*;
+*   `sh train.sh` to train the selected model. Parameters can be modified by editing *train.sh*
 
-*   `sh evaluate.sh` to evaluate the selected model. Parameters can be modified by editing *evaluate.sh*;
+*   `sh evaluate.sh` to evaluate the selected model. Parameters can be modified by editing *evaluate.sh*
 
-*   `sh run_experiments.sh` to replicate the experiments on the C-MAPSS dataset.
+*   `sh run_experiments.sh` to replicate the experiments on the C-MAPSS dataset
 
 ---------------------------------------------------------------------------------------------------------
 
