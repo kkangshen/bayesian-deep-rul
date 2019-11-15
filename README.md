@@ -62,7 +62,7 @@ Training and evaluation logs of the experimental results are provided for verifi
 
 If you find this work useful in your research, please consider citing:
 ```
- @article{dellalibera2019comparative,
+ @article{libera2019comparative,
     title={A Comparative Study between Bayesian and Frequentist Neural Networks for Remaining Useful Life Estimation in Condition-Based Maintenance},
     author={Luca Della Libera},
     year={2019},
